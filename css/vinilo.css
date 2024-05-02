@@ -1,0 +1,151 @@
+/* GENERALES */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* CARDS */
+
+#contenedor-cards{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: start;
+    align-content: flex-start;
+}
+
+.card{
+    background-color: #F8D082;
+    height: 420px;
+    width: 300px;
+    text-align: center;
+    border-color: rgb(75, 75, 75);
+    border-radius: 5%;
+    transform: scale();
+}
+.card:hover{
+    transform: scale(1.04);
+}
+#titulo{
+    text-align: center;
+    max-height: 46px;
+    min-height: 46px;
+    margin-top: 5px;
+}
+.imagenvinilo{
+    height: 200px;
+    width: 200px;
+    margin-top: 10%;
+    max-height: 200px;
+    max-width: 200px;
+}
+#precio{
+    color: darkslategray;
+    text-align: center;
+    font-size: larger;
+    margin-bottom: 5px;
+}
+#stock{
+    margin-bottom: 0px;
+}
+
+#carrito{
+    color: white;
+    padding: 13px 75px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #B51B75;
+    margin-top: 40px;
+}
+#carrito:hover{
+    background-color: #8b185b;
+}
+#link{
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    margin-top: 30px;
+}
+
+body{
+    background-color: #F8D082;
+}
+#contenedor1{
+    background-color: #ffca60;
+    margin: 3%;
+    text-align: center;
+    border: 5px;
+    border-radius: 20px;
+    height: 85px;
+}
+#contenedor1 h1{
+    font-size: 70px;
+    text-align: center;
+}
+#contenedor2{
+    background-color: #ffca60;
+    margin: 3%;
+    padding: 3%;
+    text-align: center;
+    border: 5px;
+    border-radius: 20px;
+}
+
+
+
+/* NAVBAR */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    background-color: #B51B75;
+    gap: 10px;
+    height: 90px;
+}
+.navbaritems{
+    background-color: #c5378a;
+    border-radius: 10%;
+    cursor: pointer;
+    margin: 0px 5px;
+    padding: 10px;
+    font-size: 20px;
+
+}
+#vinilos{
+    background-color: #B51B75;
+    pointer-events: none;
+}
+.navbaritems:hover{
+    background-color: #b63480;
+}
+.navbar-items-div{
+    align-content: center;
+}
+.logo{
+    align-content: center;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 80px;
+    margin-right: 5px;
+}
