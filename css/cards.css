@@ -13,7 +13,6 @@ a{
     color: black;
 }
 
-
 /* CARDS */
 
 #contenedor-cards{
@@ -109,7 +108,6 @@ body{
 }
 
 
-
 /* NAVBAR */
 
 header{
@@ -127,11 +125,9 @@ header{
     margin: 0px 5px;
     padding: 10px;
     font-size: 20px;
+
 }
-#cassettes{
-    background-color: #B51B75;
-    pointer-events: none;
-}
+
 .navbaritems:hover{
     background-color: #b63480;
 }
