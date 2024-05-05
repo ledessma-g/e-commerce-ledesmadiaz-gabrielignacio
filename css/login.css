@@ -12,3 +12,83 @@ a{
     text-decoration: none;
     color: black;
 }
+
+
+body {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F8D082;
+}
+
+.logo {
+    filter: drop-shadow(5px 5px 5px rgba(181,27,117,1));
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 0px 15px;
+    margin-bottom: 2px;
+}
+
+.logo img{
+    width: 240px;
+    height: 240px;
+}
+
+.login-container {
+    background-color: #ffca60;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor{
+    position: relative;
+    bottom: 80px;
+}
+
+.login-form {
+    max-width: 300px;
+    min-width: 250px;
+    transform: scale(1.05);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-flow: wrap;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #c5378a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #b63480;
+}
