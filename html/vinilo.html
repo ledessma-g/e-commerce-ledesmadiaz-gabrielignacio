@@ -8,29 +8,55 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <title>Vinilos</title>
+    <link rel="shortcut icon" href="../img/logo.png">
     <style>
-        #vinilos{
+    #vinilos{
     background-color: #B51B75;
     pointer-events: none;
     }
+
     </style>
 </head>
 <body>
     <!-- NAVBAR -->
     <header class="navbar">
-        <a href="../inicio.html" class="link-logo">
         <div class="logo">
-            <img src="../img/logo.png" alt="logo">
-            <h1>VinylTape</h1>
+            <a href="../inicio.html"><img src="../img/logo.png" alt="logo"></a>
+            <h1><a href="../inicio.html">VinylTape</a></h1>
+        
+            <span></span>
         </div>
         <div class="navbar-items-div">
-            <a class="navbaritems" id="inicio" role="button" href="../inicio.html">Inicio</a>
-            <a class="navbaritems" id="vinilos" role="button" href="vinilo.html" >Vinilos</a>
-            <a class="navbaritems" id="cds" role="button" href="cd.html">CDs</a>
-            <a class="navbaritems" id="cassettes" role="button" href="cassette.html">Cassettes</a>
-            <a class="navbaritems" id="cart" href="login.html"><img src="../img/cart.png" alt="shoping-cart" width="40px" height="40px"></a>
+            <div class="mitad1">
+            <a class="navbaritems" id="LogIn" role="button" href="login.html">Iniciar sesión</a>
+            <a class="navbaritems" id="vinilos" role="button" href="vinilo.html">Vinilos</a>
+            <div class="dropdown">
+                <a class="navbaritems" role="button">Productos</a>
+                <div class="dropdown-content">
+                    <a href="cd.html">CDs</a>
+                    <a href="cassette.html">Cassettes</a>
+                </div>
+            </div>
+            </div>
+            <div class="mitad2">
+                <div class="dropdown-responsive">
+                    <div id="menu">
+                    <a class="navbaritems" href="#" role="button"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
+                            <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
+                            </svg>
+                    </a>
+                </div>
+                    <div class="dropdown-content-responsive">
+                        <a href="../inicio.html">Inicio</a>
+                        <a href="login.html">Iniciar sesión</a>
+                        <a id="invisible" href="vinilo.html">Vinilos</a>
+                        <a href="cd.html">CDs</a>
+                        <a href="cassette.html">Cassettes</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        </a>
     </header>
     <!------------------------------------------------------------>
 
