@@ -16,135 +16,244 @@ a{
 body{
     background-color: #F8D082;
     font-family: "Nunito", sans-serif;
-    align-items: center;
-    justify-items: center;
-
-
 }
 
-main{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+/* MITAD 1 */
 
-}
-
-.fondo-inicio{
-    background-color: #ffca60;
-    margin: 3% 50%;
-    border-radius: 15px;
-    padding: 20px;
-    width: 90%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    scale: 1;
-    height: auto;
-}
-
-.menu {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    flex-wrap: nowrap;
-    padding-bottom: 15px;
-}
-
-.tarjeta {
-    position: relative;
-    margin: 0 10px 20px;
-    text-align: center;
-    flex: 1 0 180px;
-    border-radius: 5%;
-    transform: scale();
-    padding: 35px;
-    background-color: #b63480;
-    box-shadow: 5px 5px 5px 0px rgba(181,27,117,1);
-    margin: 0px 20px;
-    scale: 0.9;
-}
-
-.tarjeta:hover{
-    transform: scale(1.05);
-    transition: all 0.5s ease-in-out;
-    box-shadow: 7px 7px 7px 0px rgba(181,27,117,1);
-    cursor: pointer;
-    filter: drop-shadow(5px 5px 5px rgba(181,27,117,1));
-    transition: all 0.5s ease-in-out;
-    font-size: 2rem;
-
-}
-
-.logo {
-    filter: drop-shadow(5px 5px 5px rgba(181,27,117,1));
+#mitad1{
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    padding: 0px 15px;
+    grid-template-columns: 1fr 4fr;
+    text-align: center;
     align-items: center;
+    padding: 0px 10px 0px;
+    height: 250px;
 }
 
-.texto p{
-    text-align: center;
-    font-size: 20px;
-    align-items: center;
+#logo-div{
+    display: grid;
+    grid-template-rows: 1fr;
+    height: 200px;
     justify-content: center;
-}
-.texto{
-    display: flex;
     align-items: center;
-    padding-right: 20px;
+    position: relative;
+    bottom: 25px;
+    filter: drop-shadow(5px 5px 5px rgba(181,27,117,1));
 }
 
-.enlace-tarjeta {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #ff61bd;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-    transition: all 0.5s ease-in-out;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
+#logo{
+    
+    width: 200px;
+    height: 200px;
+    animation-duration:2000s;
+    animation-name: logo;   
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0ms;
 }
 
-.texto-tarjeta {
+#logo1{
     position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
+    width: 200px;
+    height: 200px;
 }
 
-.tarjeta img {
-    height: 180px;
-    width: 180px;
-    border-radius: 5%;
-    object-fit: cover;
-    margin:0px;
-    opacity: 70%;
+@keyframes logo{
+    from{
+        scale: 1;
+    }
+    to{
+        transform: rotate(129600deg);
+    }
 }
 
-img{
-    height: 180px;
-    width: 180px;
-    margin-top: 10%;
-    max-height: 180px;
-    max-width: 180px;
-    object-fit: cover;
+#logo-span{
+    font-size: 30px;
+    font-weight: bold;
+    filter: drop-shadow(1px 1px 1px rgba(181,27,117,1));
 }
 
-h1{
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-    margin: 0 0 20px 0;
-    font-family: "Nunito", sans-serif;
+#texto{
+    padding: 0px 10px 0px;
+    font-size: 105%;
 }
 
-@media screen and (width <=930px) {
-    .texto p {
-        font-size: 25px;
+@media screen and (width < 820px){
+    #contenedor-contenido{
+        min-height: 1600px;
+        margin-bottom: 100px;
+    }
+    
+    #mitad1{
+        position: relative;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 500px;
+        padding: 30px 0px 20px
     }
 
+    #logo-div{
+        grid-template-rows: 3fr 1fr;
+    }
+    
+
+    #logo{
+        position: relative;
+    }
+
+    #logo1{
+        position: absolute;
+        align-content: center;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #mitad2{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        align-content: center;
+        justify-content: center;
+        row-gap: 125px;
+        position: relative;
+        bottom: 50px;
+    }
+
+    .cartas{
+        margin: auto;
+        transform: scale(1.5);
+
+    }
+
+    #vinilos{
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    #cds{
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    #cassettes{
+        grid-row: 3;
+        grid-column: 2;
+    }
+
+    #texto{
+        font-size: 130%;
+        margin: 30px 0px 0px;
+        transition: all;
+    }
+}
+
+@media screen and (width < 700px){
+    #texto{
+        font-size: 125%;
+    }
+}
+
+@media screen and (width < 650px){
+    #texto{
+        font-size: 120%;
+    }
+}
+
+@media screen and (width < 600px){
+    #texto{
+        font-size: 115%;
+    }
+}
+
+@media screen and (width < 530px){
+    #texto{
+        font-size: 105%;
+    }
+}
+
+@media screen and (width < 470px){
+    #texto{
+        font-size: 97%;
+    }
+}
+
+@media screen and (width < 425px){
+    #texto{
+        font-size: 94%;
+    }
+}
+
+/* MITAD 2 */
+
+#mitad2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3%;
+    padding: 0px 10px 0px;
+    margin: 10px 5px;
+}
+
+.cartas{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color:  #b63480;
+    border-radius: 10%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    scale: 1;
+    box-shadow: 5px 5px 5px #78653f;
+}
+
+.cartas:hover{
+    transition: all 0.5s ease-in-out;
+    scale: 1.1;
+    box-shadow: 8px 8px 8px #262014;
+}
+
+.cards-img{
+    object-fit: cover;
+    width: 160px;
+    height: 160px;
+    border-radius: 8%;
+    margin: auto;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.enlace-cards{
+    text-shadow: 0px 0px 15px #ffffff;
+    color: #41112d;
+    font-size: 20px;
+}
+
+#cards-span{
+    font-weight: 700;
+    background-color: #b63480;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    top: 44%;
+    right: 0%;
+    align-items: center;
+    padding-top: 5px;
+}
+
+#contenedor-contenido{
+    background-color: #ffca60;
+    width: 80%;
+    height: 480px;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+    padding: 20px;
+    max-width: 900px;
+    border-radius: 20px;
 }

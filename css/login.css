@@ -41,6 +41,27 @@ body {
     height: 240px;
 }
 
+#vinilo{
+    animation-duration:2000s;
+    animation-name: logo;   
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0ms;
+}
+
+@keyframes logo{
+    from{
+        scale: 1;
+    }
+    to{
+        transform: rotate(129600deg);
+    }
+}
+
+#aguja{
+    position: absolute;
+}
+
 .login-container {
     background-color: #ffca60;
     padding: 20px;

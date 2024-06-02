@@ -32,33 +32,67 @@ a{
     width: 300px;
     text-align: center;
     border-color: rgb(75, 75, 75);
-    border-radius: 5%;
+    border-radius: 20px;
     transform: scale();
     box-shadow: 5px 5px 5px 0px #c9a868;
+    z-index: 5;
 }
+
 .card:hover{
     transform: scale(1.04);
     transition: all 0.3s ease-in-out;
+    z-index: 10;
 }
+
 #titulo{
     text-align: center;
-    max-height: 46px;
-    min-height: 46px;
+    max-height: 55px;
+    min-height: 55px;
     margin-top: 5px;
+    font-size: 15px;
+    padding: 0px 10px 0px;
 }
+
 .imagenvinilo{
-    height: 200px;
-    width: 200px;
-    margin-top: 10%;
-    max-height: 200px;
-    max-width: 200px;
+    height: 210px;
+    width: 270px;
+    margin-top: 20px;
+    max-height: 210px;
+    max-width: 270px;
+    object-fit: cover;
+    filter: drop-shadow(5px 5px 5px rgb(73, 73, 73));
 }
+
+.imagenvinilo-hover{
+    display: none;
+    height: 210px;
+    width: 270px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    max-height: 210px;
+    max-width: 270px;
+    object-fit: contain;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    filter: drop-shadow(0px 0px 8px rgb(73, 73, 73));
+}
+
+.enlace-card:hover .imagenvinilo{
+    display: none;
+}
+
+.enlace-card:hover .imagenvinilo-hover{
+    display: block;
+}
+
 #precio{
     color: darkslategray;
     text-align: center;
-    font-size: larger;
-    margin-bottom: 5px;
+    font-size: large;
+    margin-top: 5px;
 }
+
 #stock{
     margin-bottom: 0px;
 }
@@ -115,22 +149,26 @@ body{
 
 /* NAVBAR */
 
-header{
+.navbar{
     display: grid;
     padding: 0px 20px;
-    background-color: #B51B75;
+    background: rgb(181,27,117);
+    background: linear-gradient(180deg, rgba(181,27,117,1) 0%, rgba(181,27,117,0.9293982241334033) 72%, rgba(181,27,117,0.8201545266544118) 94%, rgba(0,212,255,0) 100%);
     gap: 10px;
-    height: 90px;
-
+    height: 85px;
+    position: sticky;
     justify-content: center; 
     align-items: center;
     grid-template-columns: 1fr 3fr;
-    overflow: none;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    z-index: 20;
 }
 
 .navbaritems{
     background-color: #c5378a;
-    border-radius: 8%;
+    border-radius: 8px;
     cursor: pointer;
     margin: 0px 8px;
     padding: 10px;
@@ -178,7 +216,7 @@ header{
 }
 
 .logo img:hover {
-    transform: scale(1.2); 
+    transform: scale(1.1); 
     transition: 0.4s;
 }
 
@@ -213,7 +251,7 @@ header{
     top: 38px;
     border: 2px solid darkgray;
     backdrop-filter: blur(15px);
-    border-radius: 4%;
+    border-radius: 10px;
     border: 2px transparent ;
     box-shadow: 5px 5px 5px 0px rgba(128, 128, 128, 0.637);
 }
@@ -237,7 +275,7 @@ header{
     top: 86px;
     scale: 1.5;
     backdrop-filter: blur(15px);
-    border-radius: 2%;
+    border-radius: 10px;
     border: 2px transparent ;
     box-shadow: 5px 5px 5px 0px rgba(128, 128, 128, 0.637);
 
