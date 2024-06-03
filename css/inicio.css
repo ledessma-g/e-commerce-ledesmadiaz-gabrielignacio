@@ -16,6 +16,7 @@ a{
 body{
     background-color: #F8D082;
     font-family: "Nunito", sans-serif;
+    padding-bottom: 20px;
 }
 
 /* MITAD 1 */
@@ -81,6 +82,7 @@ body{
     #contenedor-contenido{
         min-height: 1600px;
         margin-bottom: 100px;
+        padding-bottom: 40px;
     }
     
     #mitad1{
@@ -116,7 +118,7 @@ body{
         justify-content: center;
         row-gap: 125px;
         position: relative;
-        bottom: 50px;
+        bottom: 70px;
     }
 
     .cartas{
@@ -256,4 +258,5 @@ body{
     padding: 20px;
     max-width: 900px;
     border-radius: 20px;
+    
 }

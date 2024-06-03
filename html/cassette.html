@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Cassettes</title>
     <link rel="shortcut icon" href="../img/vinyl.svg">
     <style>
@@ -26,8 +27,12 @@
         </div>
         <div class="navbar-items-div">
             <div class="mitad1">
+                <div class="search-container">
+                    <div class="search-icon" onclick="toggleSearch()"><i class="fas fa-search"></i></div>
+                    <input type="text" id="searchInput" onkeyup="search()" placeholder="Buscar..." class="search-input">
+                </div>
             <a class="navbaritems" id="LogIn" role="button" href="login.html">Iniciar sesión</a>
-            <a class="navbaritems" id="cassettes" role="button" href="cassette.html">Cassettes</a>
+            <a style="display: none;" class="navbaritems" id="cassettes" role="button" href="cassette.html">Cassettes</a>
             <div class="dropdown">
                 <a class="navbaritems" role="button">Productos</a>
                 <div class="dropdown-content">
@@ -56,7 +61,17 @@
             </div>
         </div>
     </header>
-    <!------------------------------------------------------------>
+    <!----------------------------
+        <div class="etiqueta-div">
+            <span class="etiqueta novedad">NOVEDAD</span>
+            <span class="etiqueta oferta">OFERTA</span>
+            <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+            <span class="etiqueta limitada">EDICIÓN LIMITADA</span>
+            <span class="etiqueta firmada">EDICIÓN FIRMADA</span>
+            <span class="etiqueta genero">ALT / POP / ROCK</span>
+        </div> 
+        
+-------------------------------->
 
 
     <!-- CARDS -->
@@ -71,10 +86,17 @@
         <div id="contenedor-cards">
             <div class="card">
                 <a class="enlace-card" href="">
+                    <div class="etiqueta-div">
+                        <span class="etiqueta novedad">NOVEDAD</span>
+                        <span class="etiqueta oferta">OFERTA</span>
+                        <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+                        <span class="etiqueta limitada">EDICIÓN LIMITADA</span>
+                        <span class="etiqueta genero">ALT-POP</span>
+                    </div> 
                     <img class="imagenvinilo" src="cassette.img/HMHAS-blue.webp" alt="HIT ME HARD AND SOFT - BLUE CASSETTE">
                     <img class="imagenvinilo-hover" src="covers/HMHAS.webp" alt="">
                     <h3 id="titulo">BILLIE EILISH - HIT ME HARD AND SOFT - BLUE CASSETTE</h3>
-                    <p id="precio">$INSERTE PRECIO</p>
+                    <p id="precio"><span style="text-decoration: line-through;">US$ 17.99</span> US$ 9.99</p>
                     <p id="stock">STOCK: X</p>
                     <br>
                 </a>
@@ -83,10 +105,17 @@
 
             <div class="card">
                 <a class="enlace-card" href="">
+                    <div class="etiqueta-div">
+                        <span class="etiqueta novedad">NOVEDAD</span>
+                        <span class="etiqueta oferta">OFERTA</span>
+                        <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+                        <span class="etiqueta limitada">EDICIÓN LIMITADA</span>
+                        <span class="etiqueta genero">ALT-POP</span>
+                    </div> 
                     <img class="imagenvinilo" src="cassette.img/HMHAS-UKexlc.webp" alt="HIT ME HARD AND SOFT - UK EXCLUSIVE">
                     <img class="imagenvinilo-hover" src="covers/HMHAS.webp" alt="">
                     <h3 id="titulo">BILLIE EILISH - HIT ME HARD AND SOFT - UK EXCLUSIVE CASSETTE</h3>
-                    <p id="precio">$INSERTE PRECIO</p>
+                    <p id="precio"><span style="text-decoration: line-through;">US$ 17.99</span> US$ 9.99</p>
                     <p id="stock">STOCK: X</p>
                     <br>
                 </a>
@@ -95,10 +124,15 @@
 
             <div class="card">
                 <a class="enlace-card" href="">
+                    <div class="etiqueta-div">
+                        <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+                        <span class="etiqueta limitada">EDICIÓN LIMITADA</span>
+                        <span class="etiqueta genero">ALT-POP</span>
+                    </div> 
                     <img class="imagenvinilo" src="cassette.img/HTE-brownexclusive.webp" alt="HAPPIER THAN EVER - BROWN EXCLUSIVE">
                     <img class="imagenvinilo-hover" src="covers/HTE.webp" alt="">
                     <h3 id="titulo">BILLIE EILISH - HAPPIER THAN EVER - BROWN EXCLUSIVE</h3>
-                    <p id="precio">$INSERTE PRECIO</p>
+                    <p id="precio">US$ 14.99</p>
                     <p id="stock">STOCK: X</p>
                     <br>
                 </a>
@@ -107,10 +141,16 @@
 
             <div class="card">
                 <a class="enlace-card" href="">
+                    <div class="etiqueta-div">
+                        <span class="etiqueta oferta">OFERTA</span>
+                        <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+                        <span class="etiqueta limitada">EDICIÓN LIMITADA</span>
+                        <span class="etiqueta genero">ALT-POP</span>
+                    </div> 
                     <img class="imagenvinilo" src="cassette.img/HTE-greenexclusive.webp" alt="HAPPIER THAN EVER - MINT GREEN EXCLUSIVE">
                     <img class="imagenvinilo-hover" src="covers/HTE.webp" alt="">
                     <h3 id="titulo">BILLIE EILISH - HAPPIER THAN EVER - MINT GREEN EXCLUSIVE</h3>
-                    <p id="precio">$INSERTE PRECIO</p>
+                    <p id="precio"><span style="text-decoration: line-through;">US$ 14.99</span> US$ 9.99</p>
                     <p id="stock">STOCK: X</p>
                     <br>
                 </a>
@@ -119,10 +159,13 @@
 
             <div class="card">
                 <a class="enlace-card" href="">
+                    <div class="etiqueta-div">
+                        <span class="etiqueta genero">ALT-POP</span>
+                    </div> 
                     <img class="imagenvinilo" src="cassette.img/DONTSMILEATME.png" alt="DONT SMILE AT ME">
                     <img class="imagenvinilo-hover" src="covers/DONTSMILEATME.webp" alt="">
                     <h3 id="titulo">BILLIE EILISH - DONT SMILE AT ME</h3>
-                    <p id="precio">$INSERTE PRECIO</p>
+                    <p id="precio">US$ 12.99</p>
                     <p id="stock">STOCK: X</p>
                     <br>
                 </a>
@@ -131,10 +174,14 @@
 
             <div class="card">
                 <a class="enlace-card" href="">
+                    <div class="etiqueta-div">
+                        <span class="etiqueta oferta">OFERTA</span>
+                        <span class="etiqueta genero">DREAM POP / SLOWCORE</span>
+                    </div> 
                     <img class="imagenvinilo" src="cassette.img/INBRED.png" alt="INBRED">
                     <img class="imagenvinilo-hover" src="covers/INBRED.jpg" alt="">
                     <h3 id="titulo">ETHEL CAIN - INBRED - PHYSICAL EDITION</h3>
-                    <p id="precio">$INSERTE PRECIO</p>
+                    <p id="precio"><span style="text-decoration: line-through;">US$ 12.99</span> US$ 7.99</p>
                     <p id="stock">STOCK: X</p>
                     <br>
                 </a>
@@ -143,10 +190,13 @@
 
             <div class="card">
                 <a class="enlace-card" href="">
+                    <div class="etiqueta-div">
+                        <span class="etiqueta genero">DREAM POP / SLOWCORE</span>
+                    </div> 
                     <img class="imagenvinilo" src="cassette.img/GOLDENAGE.png" alt="GOLDEN AGE">
                     <img class="imagenvinilo-hover" src="covers/GOLDENAGE.jpg" alt="">
                     <h3 id="titulo">ETHEL CAIN - GOLDEN AGE</h3>
-                    <p id="precio">$INSERTE PRECIO</p>
+                    <p id="precio">US$ 9.99</p>
                     <p id="stock">STOCK: X</p>
                     <br>
                 </a>
@@ -155,10 +205,14 @@
 
             <div class="card">
                 <a class="enlace-card" href="">
+                    <div class="etiqueta-div">
+                        <span class="etiqueta oferta">OFERTA</span>
+                        <span class="etiqueta genero">INDIE POP</span>
+                    </div> 
                     <img class="imagenvinilo" src="cassette.img/AKALIZZYGRANT.png" alt="AKA LIZZY GRANT">
                     <img class="imagenvinilo-hover" src="covers/AKALIZZYGRANT.webp" alt="">
                     <h3 id="titulo">LANA DEL RAY - A.K.A. LIZZY GRANT</h3>
-                    <p id="precio">$INSERTE PRECIO</p>
+                    <p id="precio"><span style="text-decoration: line-through;">US$ 12.99</span> US$ 4.99</p>
                     <p id="stock">STOCK: X</p>
                     <br>
                 </a>
@@ -167,10 +221,13 @@
 
             <div class="card">
                 <a class="enlace-card" href="">
+                    <div class="etiqueta-div">
+                        <span class="etiqueta genero">ALT-POP</span>
+                    </div> 
                     <img class="imagenvinilo" src="cassette.img/BLUEBANISTERS.webp" alt="BLUE BANISTERS">
                     <img class="imagenvinilo-hover" src="covers/BLUEBANISTERS.webp" alt="">
                     <h3 id="titulo">LANA DEL REY - BLUE BANISTERS</h3>
-                    <p id="precio">$INSERTE PRECIO</p>
+                    <p id="precio">US$ 12.99</p>
                     <p id="stock">STOCK: X</p>
                     <br>
                 </a>
@@ -179,10 +236,13 @@
 
             <div class="card">
                 <a class="enlace-card" href="">
+                    <div class="etiqueta-div">
+                        <span class="etiqueta genero">FOLK POP / SOFT ROCK</span>
+                    </div> 
                     <img class="imagenvinilo" src="cassette.img/CHEMTRAILS.webp" alt="CHEMTRAILS">
                     <img class="imagenvinilo-hover" src="covers/CHEMTRAILS.webp" alt="">
                     <h3 id="titulo">LANA DEL REY - CHEMTRAILS OVER THE COUNTRY CLUB</h3>
-                    <p id="precio">$INSERTE PRECIO</p>
+                    <p id="precio">US$ 12.99</p>
                     <p id="stock">STOCK: X</p>
                     <br>
                 </a>
@@ -191,10 +251,13 @@
 
             <div class="card">
                 <a class="enlace-card" href="">
+                    <div class="etiqueta-div">
+                        <span class="etiqueta genero">ALT-POP</span>
+                    </div> 
                     <img class="imagenvinilo" src="cassette.img/OCEANBLVD-standard.webp" alt="OCEAN BLVD - STANDARD">
                     <img class="imagenvinilo-hover" src="covers/OCEANBLVD.jpeg" alt="">
                     <h3 id="titulo">LANA DEL REY - OCEAN BLVD - STANDARD CASSETTE</h3>
-                    <p id="precio">$INSERTE PRECIO</p>
+                    <p id="precio">US$ 13.99</p>
                     <p id="stock">STOCK: X</p>
                     <br>
                 </a>
@@ -203,10 +266,15 @@
 
             <div class="card">
                 <a class="enlace-card" href="">
+                    <div class="etiqueta-div">
+                        <span class="etiqueta oferta">OFERTA</span>
+                        <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+                        <span class="etiqueta genero">ALT-POP</span>
+                    </div> 
                     <img class="imagenvinilo" src="cassette.img/OCEANBLVD-altcover.webp" alt="OCEAN BLVD - ALT COVER 1">
                     <img class="imagenvinilo-hover" src="covers/OCEANBLVD-ALT1.webp" alt="">
                     <h3 id="titulo">LANA DEL REY - OCEAN BLVD - ALTERNATIVE COVER 1</h3>
-                    <p id="precio">$INSERTE PRECIO</p>
+                    <p id="precio"><span style="text-decoration: line-through;">US$ 17.99</span> US$ 11.99</p>
                     <p id="stock">STOCK: X</p>
                     <br>
                 </a>
@@ -215,10 +283,15 @@
 
             <div class="card">
                 <a class="enlace-card" href="">
+                    <div class="etiqueta-div">
+                        <span class="etiqueta oferta">OFERTA</span>
+                        <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+                        <span class="etiqueta genero">ALT-POP</span>
+                    </div> 
                     <img class="imagenvinilo" src="cassette.img/OCEANBLVD-altcover2.webp" alt="OCEAN BLVD - ALT COVER 2">
                     <img class="imagenvinilo-hover" src="covers/OCEANBLVD-TARGET.jpeg" alt="">
                     <h3 id="titulo">LANA DEL REY - OCEAN BLVD - ALTERNATIVE COVER 2</h3>
-                    <p id="precio">$INSERTE PRECIO</p>
+                    <p id="precio"><span style="text-decoration: line-through;">US$ 17.99</span> US$ 11.99</p>
                     <p id="stock">STOCK: X</p>
                     <br>
                 </a>
@@ -227,10 +300,14 @@
 
             <div class="card">
                 <a class="enlace-card" href="">
+                    <div class="etiqueta-div">
+                        <span class="etiqueta oferta">OFERTA</span>
+                        <span class="etiqueta genero">INDIE FOLK</span>
+                    </div> 
                     <img class="imagenvinilo" src="cassette.img/PUNISHER.png" alt="PUNISHER">
                     <img class="imagenvinilo-hover" src="covers/PUNISHER.jpg" alt="">
                     <h3 id="titulo">PHOEBE BRIDGERS - PUNISHER</h3>
-                    <p id="precio">$INSERTE PRECIO</p>
+                    <p id="precio"><span style="text-decoration: line-through;">US$ 12.99</span> US$ 7.99</p>
                     <p id="stock">STOCK: X</p>
                     <br>
                 </a>
@@ -247,6 +324,48 @@
     <footer>
 
     </footer>
+
+    <script>
+        function toggleSearch() {
+            var input = $(".search-input");
+            if (input.is(":visible")) {
+                input.val(''); 
+                search();
+                input.hide();
+            } else {
+                input.show().focus();
+            }
+        }
+
+        function search() {
+            var input, filter, cards, card, title, price, i, txtTitle, txtPrice;
+            input = document.getElementById('searchInput');
+            filter = input.value.toUpperCase();
+            cards = document.getElementsByClassName('card');
+
+            for (i = 0; i < cards.length; i++) {
+                card = cards[i];
+                title = card.querySelector('#titulo');
+                price = card.querySelector('#precio');
+                txtTitle = title.textContent || title.innerText;
+                txtPrice = price.textContent || price.innerText;
+
+                if (txtTitle.toUpperCase().indexOf(filter) > -1 || txtPrice.toUpperCase().indexOf(filter) > -1) {
+                    card.style.display = "";
+                } else {
+                    card.style.display = "none";
+                }
+            }
+
+            if (filter === '' && input.style.display === 'none') {
+                input.value = '';
+                search();
+            }
+        }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>body{font-family: "Nunito", sans-serif;}</style> 
 </body>
 </html>
 </a>
