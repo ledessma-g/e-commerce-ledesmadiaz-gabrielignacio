@@ -294,6 +294,7 @@ body{
     outline: none;
     font-size: 16px;
     transition: width 0.3s ease;
+    display: none;
 }
 
 .search-input:focus {
@@ -405,7 +406,14 @@ body{
 }
 
 @media screen and (max-width: 719px) {
-    .mitad1{
+    .etiqueta{
+        font-size: 10px;
+        padding: 2px;
+    }
+    #LogIn{
+        display: none;
+    }
+    .dropdown{
         display: none;
     }
     .mitad2{
@@ -415,10 +423,12 @@ body{
         height: 280px;
         width: 200px;
         box-shadow: 3px 3px 3px 0px #c9a868;
+        padding: auto;
     }
     #titulo{
-        min-height: 30px;
-        font-size: 14px;
+        min-height: 40px;
+        max-height: 40px;
+        font-size: 10px;
     }
     
     #precio, #stock{
@@ -430,18 +440,36 @@ body{
     }
     .imagenvinilo{
         height: 140px;
-        width: 140px;
+        width: 180px;
         margin-top: 5%;
 
     }
     #carrito{
-        padding: 2px 22px;
-        margin-top: 0px;
+        padding: 2px 20px;
+        position: relative;
+        top: 15px;
+        width: 170px;
+    }
+    br{
+        display: none;
+    }
+    main{
+        margin-top: 5px;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .mitad1{
+    .logo h1{
+        display: none;
+    }
+    .etiqueta{
+        font-size: 6px;
+        padding: 2px;
+    }
+    #LogIn{
+        display: none;
+    }
+    .dropdown{
         display: none;
     }
     .mitad2{
@@ -451,12 +479,13 @@ body{
         height: 224px;
         width: 160px;
         box-shadow: 3px 3px 3px 0px #c9a868;
+        border-radius: 5px;
     }
     #titulo{
-        min-height: 20px;
-        font-size: 10px;
+        min-height: 28px;
+        max-height: 28px;
+        font-size: 8px;
     }
-    
     #precio, #stock{
         text-align: center;
         max-height: 10px;
@@ -464,14 +493,22 @@ body{
         margin-top: 5px;
         font-size: 10px;
     }
-    .imagenvinilo{
+    .imagenvinilo, .imagenvinilo-hover{
         height: 100px;
-        width: 100px;
+        width: 120px;
         margin-top: 5%;
 
     }
     #carrito{
         padding: 2px 14px;
         margin-top: 0px;
+        position: relative;
+        top: 15px;
+    }
+    br{
+        display: none;
+    }
+    main{
+        margin-top: 5px;
     }
 }
