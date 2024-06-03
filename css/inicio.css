@@ -78,112 +78,7 @@ body{
     font-size: 105%;
 }
 
-@media screen and (width < 820px){
-    #contenedor-contenido{
-        min-height: 1600px;
-        margin-bottom: 100px;
-        padding-bottom: 40px;
-    }
-    
-    #mitad1{
-        position: relative;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        height: 500px;
-        padding: 30px 0px 20px
-    }
 
-    #logo-div{
-        grid-template-rows: 3fr 1fr;
-    }
-    
-
-    #logo{
-        position: relative;
-    }
-
-    #logo1{
-        position: absolute;
-        align-content: center;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
-    #mitad2{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-        align-content: center;
-        justify-content: center;
-        row-gap: 125px;
-        position: relative;
-        bottom: 70px;
-    }
-
-    .cartas{
-        margin: auto;
-        transform: scale(1.5);
-
-    }
-
-    #vinilos{
-        grid-row: 1;
-        grid-column: 2;
-    }
-
-    #cds{
-        grid-row: 2;
-        grid-column: 2;
-    }
-
-    #cassettes{
-        grid-row: 3;
-        grid-column: 2;
-    }
-
-    #texto{
-        font-size: 130%;
-        margin: 30px 0px 0px;
-        transition: all;
-    }
-}
-
-@media screen and (width < 700px){
-    #texto{
-        font-size: 125%;
-    }
-}
-
-@media screen and (width < 650px){
-    #texto{
-        font-size: 120%;
-    }
-}
-
-@media screen and (width < 600px){
-    #texto{
-        font-size: 115%;
-    }
-}
-
-@media screen and (width < 530px){
-    #texto{
-        font-size: 105%;
-    }
-}
-
-@media screen and (width < 470px){
-    #texto{
-        font-size: 97%;
-    }
-}
-
-@media screen and (width < 425px){
-    #texto{
-        font-size: 94%;
-    }
-}
 
 /* MITAD 2 */
 
@@ -259,4 +154,156 @@ body{
     max-width: 900px;
     border-radius: 20px;
     
+}
+
+
+@media screen and (width < 820px){
+    #contenedor-contenido{
+        min-height: 750px;
+        margin-bottom: 10px;
+        padding-bottom: 30px;
+    }
+    
+    #mitad1{
+        position: relative;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 500px;
+        padding: 30px 0px 20px
+    }
+
+    #logo-div{
+        grid-template-rows: 3fr 1fr;
+    }
+    
+
+    #logo{
+        position: relative;
+    }
+
+    #logo1{
+        position: absolute;
+        align-content: center;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #mitad2{
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .cartas{
+        margin: auto;
+        width: 150px;
+        height: 150px;
+        margin-top: 35px;
+    }
+
+    .cards-img{
+        width: 120px;
+        height: 120px;
+    }
+
+    #cards-span{
+        width: 150px;
+        height: 30px;
+        font-size: 15px;
+        top: 40%;
+    }
+
+    #texto{
+        font-size: 130%;
+        margin: 30px 0px 0px;
+        transition: all;
+    }
+}
+
+@media screen and (width < 700px){
+    #texto{
+        font-size: 125%;
+    }
+}
+
+@media screen and (width < 650px){
+    #texto{
+        font-size: 120%;
+    }
+}
+
+@media screen and (width < 600px){
+    #contenedor-contenido{
+        min-height: 700px;
+        margin-bottom: 10px;
+        padding-bottom: 30px;
+    }
+
+    .cartas{
+        margin: auto;
+        width: 100px;
+        height: 100px;
+        margin-top: 35px;
+    }
+
+    .cards-img{
+        width: 80px;
+        height: 80px;
+    }
+
+    #cards-span{
+        width: 100px;
+        height: 30px;
+        font-size: 15px;
+        top: 40%;
+    }
+    
+    #texto{
+        font-size: 115%;
+    }
+}
+
+@media screen and (width < 530px){
+    #texto{
+        font-size: 105%;
+    }
+}
+
+@media screen and (width < 470px){
+    #texto{
+        font-size: 97%;
+    }
+}
+
+@media screen and (width < 420px){
+    #contenedor-contenido{
+        min-height: 700px;
+        margin-bottom: 10px;
+        padding-bottom: 30px;
+    }
+
+    .cartas{
+        margin: auto;
+        width: 80px;
+        height: 80px;
+        margin-top: 35px;
+    }
+
+    .cards-img{
+        width: 64px;
+        height: 64px;
+    }
+
+    #cards-span{
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+        top: 30%;
+    }
+
+    #texto{
+        font-size: 94%;
+    }
 }
