@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+
+
+/*FOOTER*/
+footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+.conteiner{
+    width: 100%;
+    justify-content: space-between;
+    background:  #B51B75;
+    min-height: 10px;
+    padding: 18px 18px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*iconos*/
+.titulo{
+   font-size: 30px;
+   display: flex;
+    justify-content: center;
+    position: relative;
+   color: #d9d5cd;
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 1x 5px;
+    flex-wrap: wrap;
+}
+.icon-elem{
+    list-style: none;
+}
+.icon{
+    color: #000000;
+    font-size: 45px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.3s
+}
+.icon:hover{
+    transform: translateY(-10px);
+}
+.icon-elem{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+/*LISTAS*/
+.lista1{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    position:relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+.listas{
+   display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 70px;
+}
+/*ul li*/
+.menu-elem{
+    list-style: none; 
+}
+.menu-icon{ 
+    text-decoration: none;
+    color: #d9d5cd;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+}
+.menu-icon :hover{
+    opacity: 1;
+}
+ul li a:hover{
+    transform: translateY(-10px);
+}
+ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s
+}
+.title{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #fafafa;
+    color:#b63480;;
+}
+/*© 2024 VinylTape*/
+.text{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    font-size: 19px;
+    z-index: 1;
+}
+hr{
+    height: 10px;
+    width: 85%;
+    background-color: #000000;
+    border: none;
+   
+}
+
+
+/*RESPONSIVE*/
+@media screen and (max-width: 719px){
+    .conteiner{
+        width: 100%;
+        min-height: 10px;
+        padding: 18px 18px;
+        display: flex;
+        align-items: center;
+       flex-direction: column;
+    }
+    .icon-elem{
+    display: inline-block;
+    }
+    .listas{
+        display: flex;
+        padding: 20px;
+    }
+    .text{
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+
+    }
+    .title{
+        font-size: 20px;
+    }
+    .menu-icon{
+        font-size: 15px;
+
+    }
+}
+@media screen and (max-width: 400px){
+    .conteiner{
+        width: 100%;
+        min-height: 10px;
+    }
+    .icon-elem{
+       display: inline-block;
+       padding: 4px 2px;
+       justify-content: space-between;
+       font-size: 12px;
+    }
+}

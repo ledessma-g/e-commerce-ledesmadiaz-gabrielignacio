@@ -24,6 +24,7 @@ a{
     justify-content: center;
     align-items: start;
     align-content: flex-start;
+    z-index: 2;
 }
 
 .card{

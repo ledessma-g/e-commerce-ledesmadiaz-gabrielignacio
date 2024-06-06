@@ -3,9 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sobre nosotros</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="../css/cards.css">
+    <link rel="shortcut icon" href="../img/vinyl.svg">
+    <style>
+        #contenedor-nosotros{
+            position: relative;
+            margin: 50px auto 50px;
+            padding: 40px;
+            justify-content: center;
+            text-align: center;
+            background-color: #ffca60;
+            max-width: 1300px;
+            border-radius: 15px;
+        }
+        #contenedor-nosotros h1{
+            font-size: 50px;
+            position: sticky;
+            top: 100px;
+            background-color: #ffca60;
+            filter: opacity(70%);
+            width: auto;
+
+
+        }
+        p{
+            font-size: 20px;
+        }
+        #p1, #p3{
+            text-align:left justify;
+            padding: 0px 10% 0px 0px;
+        }
+        #p2, #p4{
+            text-align: right justify;
+            padding: 0px 0px 0px 10%;
+        }
+    </style>
 </head>
 <body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="../inicio.html"><img src="../img/vinyl.svg" alt="logo"></a>
+            <h1><a href="../inicio.html">VinylTape</a></h1>
+        
+            <span></span>
+        </div>
+        <div class="navbar-items-div">
+            <div class="mitad1">
+                <div class="search-container">
+                    <div class="search-icon" onclick="toggleSearch()"><i class="fas fa-search"></i></div>
+                    <input type="text" id="searchInput" onkeyup="search()" placeholder="Buscar..." class="search-input">
+                </div>
+            <a class="navbaritems" id="LogIn" role="button" href="login.html">Iniciar sesión</a>
+            <a class="navbaritems" id="LogIn" role="button" href="Carrito.html">Carrito</a>
+            <a style="display: none;" class="navbaritems" id="vinilos invisible" role="button" href="vinilo.html">Vinilos</a>
+            <div class="dropdown">
+                <a class="navbaritems" role="button">Productos</a>
+                <div class="dropdown-content">
+                    <a href="vinilo.html">Vinilos</a>
+                    <a href="cd.html">CDs</a>
+                    <a href="cassette.html">Cassettes</a>
+                </div>
+            </div>
+            </div>
+            <div class="mitad2">
+                <div class="dropdown-responsive">
+                    <div id="menu">
+                    <a class="navbaritems" href="#" role="button"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
+                            <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
+                            </svg>
+                    </a>
+                </div>
+                    <div class="dropdown-content-responsive">
+                        <a href="../inicio.html">Inicio</a>
+                        <a href="login.html">Iniciar sesión</a>
+                        <a href="vinilo.html">Vinilos</a>
+                        <a href="cd.html">CDs</a>
+                        <a href="cassette.html">Cassettes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="contenedor-nosotros">
+        <h1>Sobre nosotros</h1>
+        <p id="p1">En VinylTape, somos más que una tienda de música; somos custodios de un legado sonoro. Nacimos de la pasión por la música en su forma más auténtica y tangible. En una era donde lo digital domina, nosotros defendemos la belleza de los formatos físicos: vinilos, CDs y cassettes. Creemos que la música no solo se escucha, se siente, se toca, se colecciona y se atesora.</p>
+        <br>
+        <p id="p2">Nuestro equipo está compuesto por verdaderos amantes de la música, cada uno con una historia personal de coleccionismo y una profunda admiración por los grandes artistas y las grabaciones icónicas. Nos esforzamos por ofrecer un catálogo diverso que incluye desde clásicos eternos hasta tesoros escondidos que esperan ser descubiertos. Cada artículo en nuestras estanterías ha sido cuidadosamente seleccionado por su calidad y su capacidad para contar una historia única.</p>
+        <br>
+        <p id="p3">En VinylTape, entendemos que la música es una experiencia personal e íntima. Por eso, nos dedicamos a crear un espacio donde cada melómano pueda redescubrir la magia de tener su música favorita en las manos. Desde el arte de las portadas hasta el ritual de colocar la aguja sobre el vinilo, queremos que nuestros clientes vivan cada momento con intensidad y placer.</p>
+        <br>
+        <p id="p4">Nuestro compromiso no se detiene en la venta de música. También organizamos eventos, charlas y sesiones de escucha para fomentar una comunidad apasionada y conectada por el amor a la música. Creemos en la importancia de preservar y compartir esta herencia cultural para futuras generaciones.</p>
+        <br>
+        <p id="p5">Únete a nosotros en VinylTape y forma parte de una comunidad que celebra la música de una manera que nunca pasa de moda. Aquí, cada nota, cada álbum, y cada historia cobra vida.</p>
     
+    </div>
+    <footer class="conteiner">
+        <div class="redes-sociales">
+            <h3 class="titulo">Seguinos en</h3>
+                <ul class="social-icon">    
+                    <li class="icon-elem"><a href="#" class="icon"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                    <li class="icon-elem"><a href="#" class="icon"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li class="icon-elem"><a href="#" class="icon"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li class="icon-elem"><a href="#" class="icon"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li class="icon-elem"><a href="#" class="icon"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+                </ul>  
+                </div>
+            <hr> 
+            <div class="lista1">
+            <div class="listas"> 
+                <h3 class="title">TIENDA</h3>
+                <ul class="menu-elem">
+                    <li><a href="#" class="menu-icon">Novedades</a></li>
+                    <li><a href="#" class="menu-icon">Pre-ventas</a></li>
+                    <li><a href="#" class="menu-icon">Tendencias</a></li>
+                    </ul>
+                </div>
+
+            <div class="listas"> 
+                <h3 class="title">LEGAL</h3>
+                <ul class="menu-elem">
+                    <li><a href="#" class="menu-icon">Política de Privacidad</a></li>
+                    <li><a href="#" class="menu-icon">Términos y Condiciones</a></li>
+                    <li><a href="#" class="menu-icon">Centro de seguridad</a></li>
+                </ul>
+                </div>
+
+            <div class="listas">
+                <h3 class="title">AYUDA </h3>
+                <ul class="menu-elem">
+                    <li><a href="#" class="menu-icon">Preguntas Frecuentes</a></li>
+                    <li id="invisible"><a href="#" class="menu-icon">Sobre Nosotros</a></li>
+                    <li><a href="#" class="menu-icon">Agradecimientos</a></li>
+                </ul>
+                <p class="text">© 2024 VinylTape |Todos los derechos reservados.</p> 
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
