@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +8,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <title>Iniciar sesión</title>
-    <link rel="shortcut icon" href="../img/vinyl.svg">
+    <link rel="shortcut icon" href="../img/logo.png">
 </head>
 <body>
     <div class="contenedor">
         <div class="logo">
-            <img src="../img/vinyl1.svg" id="vinilo" alt="logo">
-            <img src="../img/vinyl2.svg" id="aguja" alt="logo">
+            <img src="../img/logo.png" alt="logo">
         </div>
         <div class="login-container">
-            <form class="login-form" action="../inicio.html">
-                <h2>Iniciar Sesión</h2>
-                <input type="text" placeholder="Nombre de usuario" required>
-                <input type="password" placeholder="Contraseña" required>
-                <button type="submit">Ingresar</button>
+            <form class="login-form" action="#" onsubmit="return validarFormulario();">
+                <h2> INICIAR SESIÓN </h2>
+                <input type="text" id="username" placeholder="Nombre de usuario" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <div id="error-msg" style="color: red; display: none;"> Usuario o contraseña incorrectos. Inténtelo de nuevo.</div>
+                <button type="button" onclick="validarFormulario()"> Ingresar </button>
+
             </form>
         </div>
     </div>
+    <script>
+        function validarFormulario(){
+    const username= document.getElementById('username').value
+    const password= document.getElementById('password').value
+    const errorMsg = document.getElementById('error-msg');
+
+    const correctusername = 'user';
+    const correctpassword = '123';
+
+    if(username === correctusername && password === correctpassword) {
+            alert('Inicio de sesión exitoso');
+            window.location.href = '../inicio.html';
+    } else {
+        errorMsg.style.display = 'block'; 
+                return false; 
+     }
+}    
+    </script>
 </body>
 </html>
