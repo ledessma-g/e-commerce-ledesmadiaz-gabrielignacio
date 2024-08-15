@@ -45,9 +45,10 @@ body{
     
     width: 200px;
     height: 200px;
-    animation-duration:2000s;
+    animation-duration:4s;
     animation-name: logo;   
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
     animation-direction: normal;
     animation-delay: 0ms;
 }
@@ -60,10 +61,10 @@ body{
 
 @keyframes logo{
     from{
-        scale: 1;
+        transform: rotate(0deg);
     }
     to{
-        transform: rotate(129600deg);
+        transform: rotate(360deg);
     }
 }
 
