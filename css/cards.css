@@ -19,23 +19,29 @@ a{
     display: flex;
     flex-flow: row wrap;
     gap: 20px;
-    width: 100%;
     text-align: center;
     justify-content: center;
     align-items: start;
     align-content: flex-start;
     z-index: 2;
+    background-color: #CDC2A5;
+    margin: 0 3% 3% 3%;
+    padding: 3%;
+    text-align: center;
+    border: 5px;
+    border-radius: 20px;
+    width: auto;
 }
 
 .card{
-    background-color: #F8D082;
-    height: 420px;
-    width: 300px;
+    background-color: #E1D7C6;
+    height: 330px;
+    width: 225px;
     text-align: center;
     border-color: rgb(75, 75, 75);
-    border-radius: 20px;
+    border-radius: 10px;
     transform: scale();
-    box-shadow: 5px 5px 5px 0px #c9a868;
+    box-shadow: 5px 5px 5px 0px #a39c8f;
     z-index: 5;
 }
 
@@ -45,33 +51,29 @@ a{
     z-index: 10;
 }
 
-#titulo{
+.titulo-card{
     text-align: center;
-    max-height: 55px;
-    min-height: 55px;
+    max-height: 45px;
+    min-height: 45px;
     margin-top: 5px;
-    font-size: 15px;
-    padding: 0px 10px 0px;
+    font-size: 12px;
+    padding: 0px 15px 0px;
 }
 
 .imagenvinilo{
-    height: 210px;
-    width: 270px;
+    height: 155px;
+    width: 200px;
     margin-top: 20px;
-    max-height: 210px;
-    max-width: 270px;
     object-fit: cover;
     filter: drop-shadow(5px 5px 5px rgb(73, 73, 73));
 }
 
 .imagenvinilo-hover{
     display: none;
-    height: 210px;
-    width: 270px;
+    height: 155px;
+    width: 200px;
     margin-top: 20px;
     margin-bottom: 10px;
-    max-height: 210px;
-    max-width: 270px;
     object-fit: contain;
     position: relative;
     left: 50%;
@@ -127,35 +129,42 @@ a{
     background-color: cornflowerblue;
 }
 
-#precio{
+.precio{
     color: darkslategray;
     text-align: center;
-    font-size: large;
     margin-top: 5px;
 }
 
-#precio span{
+.precio span{
     color: gray;
 }
 
-#stock{
-    margin-bottom: 0px;
+.exact-price {
+    color: rgb(29, 29, 29) !important;
+}
+
+.stock{
+    font-size: 12px;
+    margin-bottom: -10px;
 }
 
 #carrito{
     color: white;
-    padding: 13px 75px;
+    padding: 8px 20% 8px 20%;
     cursor: pointer;
+    font-size: small;
+    font-weight: 700;
     border-radius: 5px;
-    background-color: #B51B75;
-    margin-top: 40px;
-    width: 50%;
+    background-color: #295f98;
+    width: 100%;
 
 }
+
 #carrito:hover{
-    background-color: #8b185b;
+    background-color: #306dad;
 
 }
+
 #link{
     text-decoration: none;
     color: white;
@@ -168,28 +177,46 @@ main{
 }
 
 body{
-    background-color: #F8D082;
+    background-color: #EAE4DD;
 }
+
 #contenedor1{
-    background-color: #ffca60;
-    margin: 3%;
+    margin: 20px;
     text-align: center;
     border: 5px;
     border-radius: 20px;
-    height: 85px;
+    height: 80px;
+    align-content: center;
 }
+
 #contenedor1 h1{
     font-size: 70px;
     text-align: center;
 }
-#contenedor2{
-    background-color: #ffca60;
-    margin: 3%;
-    padding: 3%;
-    text-align: center;
-    border: 5px;
-    border-radius: 20px;
+
+.filtros{
+    display: none;
 }
+
+label{
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+    padding: 2px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+label:has(input:checked){
+    border: solid 1px #295f98;
+
+}
+
+#contenedor2{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-row: auto;
+} 
 
 
 /* NAVBAR */
@@ -197,8 +224,8 @@ body{
 .navbar{
     display: grid;
     padding: 0px 20px;
-    background: rgb(181,27,117);
-    background: linear-gradient(180deg, rgba(181,27,117,1) 0%, rgba(181,27,117,0.9293982241334033) 72%, rgba(181,27,117,0.8201545266544118) 94%, rgba(0,212,255,0) 100%);
+    background: #295f98;
+    background: linear-gradient(180deg, rgba(41, 95, 152,1) 0%, rgba(41, 95, 152,0.9293982241334033) 72%, rgba(41, 95, 152,0.8201545266544118) 94%, rgba(0,212,255,0) 100%);
     gap: 10px;
     height: 85px;
     position: sticky;
@@ -206,13 +233,11 @@ body{
     align-items: center;
     grid-template-columns: 1fr 3fr;
     position: sticky;
-    position: -webkit-sticky;
     top: 0px;
     z-index: 20;
 }
 
 .navbaritems{
-    background-color: #c5378a;
     border-radius: 8px;
     cursor: pointer;
     margin: 0px 8px;
@@ -231,7 +256,7 @@ body{
 }
 
 .navbaritems:hover{
-    background-color: #b63480;
+    background-color: #3370b1;
     transform: scale(1.08);
     transition: 100ms;
 }
@@ -253,6 +278,7 @@ body{
     align-items: center;
 }
 
+
 .logo img{
     height: 75px;
     margin-right: 10px;
@@ -268,8 +294,6 @@ body{
 #cart{
     width: 50px;
     height: 50px;
-    padding: none;
-
 }
 
 .search-container {
@@ -308,47 +332,9 @@ body{
 
 #cart img{
     position: relative;
-    top: 15px;
-}
-.dropdown {
-    position: relative;
-    display: inline-block;
+    top: 7px;
 }
 
-.dropdown:hover{
-    transform: scale(1.08);
-    transition: 100ms;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #d8d7d72d;
-    min-width: 150px;
-    z-index: 1;
-    right: 4px;
-    top: 32px;
-    border: 2px solid darkgray;
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    border: 2px transparent ;
-    box-shadow: 5px 5px 5px 0px rgba(128, 128, 128, 0.637);
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    display: block;
-    text-decoration: none;
-}
-
-.dropdown-content a:hover{
-    color: rgb(55, 55, 55);
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
 .dropdown-content-responsive {
     display: none;
@@ -357,7 +343,7 @@ body{
     min-width: 200px;
     z-index: 1;
     right: 52px;
-    top: 86px;
+    top: 60px;
     scale: 1.5;
     backdrop-filter: blur(15px);
     border-radius: 10px;
@@ -371,18 +357,25 @@ body{
     display: block;
     text-decoration: none;
 }
-.dropdown-responsive:hover .dropdown-content-responsive {
-    display: block;
-}
+
 
 #menu{
     position: relative;
-    bottom: 2px;
+    bottom: 4px;
+}
+
+.dropdown-responsive{
+    padding: 5px;
+    max-height: 38px;
+    position: relative;
+    top: 5px;
+    border-radius: 8px;
 }
 
 .dropdown-responsive:hover {
     transform: scale(1.08);
     transition: 100ms;
+    background-color: #3370b1;
 }
 
 #menu svg{
@@ -407,6 +400,103 @@ body{
     display: none;
 }
 
+
+/* FILTROS */
+
+/* Estilos generales para la sección de filtros */
+.filter-section {
+    width: 60px; /* Ancho cuando está oculto */
+    height: auto;
+    size-adjust: auto;
+    transition: width 0.5s ease;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.filter-section.expanded {
+    width: 200px; /* Ancho cuando está visible */
+}
+
+.filter-section.expanded #filtros-span{
+    display: block;
+}
+
+/* Icono de filtro */
+#filterIcon {
+    cursor: pointer;
+    font-size: 24px;
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 5px;
+    position: relative;
+}
+
+#filterIcon-div{
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#filtros-span{
+    display: none;
+    transition: all 0.2s ease-in-out;
+    margin-left: 10px;
+}
+
+/* Estilos para los filtros dentro del div */
+#filters {
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+#filters.visible {
+    opacity: 1;
+    height: auto;
+}
+
+/* Detalles del grupo de filtros */
+.filter-group summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+    width: 100px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#filter-counter{
+    font-style: normal;
+    position: absolute;
+    right: 4px;
+    bottom: 1px;
+    font-size: 12px;
+    width: 16px;
+    height: 16px;
+    background-color: red;
+    padding: 0.5px;
+    border-radius: 100%;
+}
+
+
+
+
 @media screen and (max-width: 719px) {
     .etiqueta{
         font-size: 10px;
@@ -427,13 +517,13 @@ body{
         box-shadow: 3px 3px 3px 0px #c9a868;
         padding: auto;
     }
-    #titulo{
+    .titulo-card{
         min-height: 40px;
         max-height: 40px;
         font-size: 10px;
     }
     
-    #precio, #stock{
+    .precio, .stock{
         text-align: center;
         max-height: 10px;
         min-height: 10px;
@@ -483,12 +573,12 @@ body{
         box-shadow: 3px 3px 3px 0px #c9a868;
         border-radius: 5px;
     }
-    #titulo{
+    .titulo-card{
         min-height: 28px;
         max-height: 28px;
         font-size: 8px;
     }
-    #precio, #stock{
+    .precio, .stock{
         text-align: center;
         max-height: 10px;
         min-height: 10px;
