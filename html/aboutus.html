@@ -21,7 +21,7 @@
             justify-content: center;
             text-align: center;
             background-color: #ffca60;
-            max-width: 1300px;
+            max-width: 1100px;
             border-radius: 15px;
         }
         #contenedor-nosotros h1{
@@ -45,9 +45,13 @@
             text-align: right justify;
             padding: 0px 0px 0px 10%;
         }
+        .aboutusnavbardiv{
+            display: none;
+        }
     </style>
 </head>
 <body>
+    <!-- NAVBAR -->
     <header class="navbar">
         <div class="logo">
             <a href="../inicio.html"><img src="../img/vinyl.svg" alt="logo"></a>
@@ -57,42 +61,11 @@
         </div>
         <div class="navbar-items-div">
             <div class="mitad1">
-                <div class="search-container">
-                    <div class="search-icon" onclick="toggleSearch()"><i class="fas fa-search"></i></div>
-                    <input type="text" id="searchInput" onkeyup="search()" placeholder="Buscar..." class="search-input">
-                </div>
-            <a class="navbaritems" id="LogIn" role="button" href="login.html">Iniciar sesión</a>
-            <a class="navbaritems" id="LogIn" role="button" href="Carrito.html">Carrito</a>
-            <a style="display: none;" class="navbaritems" id="vinilos invisible" role="button" href="vinilo.html">Vinilos</a>
-            <div class="dropdown">
-                <a class="navbaritems" role="button">Productos</a>
-                <div class="dropdown-content">
-                    <a href="vinilo.html">Vinilos</a>
-                    <a href="cd.html">CDs</a>
-                    <a href="cassette.html">Cassettes</a>
-                </div>
-            </div>
-            </div>
-            <div class="mitad2">
-                <div class="dropdown-responsive">
-                    <div id="menu">
-                    <a class="navbaritems" href="#" role="button"> 
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
-                            <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
-                            </svg>
-                    </a>
-                </div>
-                    <div class="dropdown-content-responsive">
-                        <a href="../inicio.html">Inicio</a>
-                        <a href="login.html">Iniciar sesión</a>
-                        <a href="vinilo.html">Vinilos</a>
-                        <a href="cd.html">CDs</a>
-                        <a href="cassette.html">Cassettes</a>
-                    </div>
-                </div>
+                <a class="navbaritems" role="button" href="catalogo.html"><img width="60" height="60" src="https://img.icons8.com/ios-glyphs/60/music-record.png" alt="music-record"/> Catalogo</a>
             </div>
         </div>
     </header>
+
     <div id="contenedor-nosotros">
         <h1>Sobre nosotros</h1>
         <p id="p1">En VinylTape, somos más que una tienda de música; somos custodios de un legado sonoro. Nacimos de la pasión por la música en su forma más auténtica y tangible. En una era donde lo digital domina, nosotros defendemos la belleza de los formatos físicos: vinilos, CDs y cassettes. Creemos que la música no solo se escucha, se siente, se toca, se colecciona y se atesora.</p>
@@ -149,4 +122,6 @@
         </div>
     </footer>
 </body>
+<script src="../js/consts.js"></script>
+<script src="../js/navbar.js"></script>
 </html>

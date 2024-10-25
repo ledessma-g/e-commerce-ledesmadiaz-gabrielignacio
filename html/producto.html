@@ -11,22 +11,11 @@
     <link rel="stylesheet" href="../css/footer.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="../css/loading.css">
+    <link rel="stylesheet" href="../css/producto.css">
     <title>Catálogo</title>
     <link rel="shortcut icon" href="../img/vinyl.svg">
-    <style>
-    #vinilos{
-        background-color: transparent;
-        pointer-events: none;
-    }
-
-    </style>
 </head>
 <body>
-    <div id="loading-screen">
-           <div class="spinner"></div>
-    </div>
-
     <!-- NAVBAR -->
     <header class="navbar">
         <div class="logo">
@@ -37,70 +26,14 @@
         </div>
         <div class="navbar-items-div">
             <div class="mitad1">
-                <div class="search-container">
-                    <div class="search-icon" onclick="toggleSearch()"><i class="fas fa-search"></i></div>
-                    <input type="text" placeholder="Buscar..." class="search-input" id="search-input">
-                </div>
+                <a class="navbaritems" role="button" href="catalogo.html"><img width="60" height="60" src="https://img.icons8.com/ios-glyphs/60/music-record.png" alt="music-record"/> Catalogo</a>
             </div>
         </div>
     </header>
-    <!------------------------------------------------------------>
-
-<!-- ETIQUETAS 
-
-        <div class="etiqueta-div">
-            <span class="etiqueta novedad">NOVEDAD</span>
-            <span class="etiqueta oferta">OFERTA</span>
-            <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
-            <span class="etiqueta limitada">EDICIÓN LIMITADA</span>
-            <span class="etiqueta firmada">EDICIÓN FIRMADA</span>
-            <span class="etiqueta genero">ALT / POP / ROCK</span>
-        </div> 
-    
--->
 
     <main>
-        <!-- TITULO -->
-        <div class="contenedor1">
-            <h1>Catálogo</h1>
-        </div>
-
-        <!-- CARDS -->
-
-        
         
 
-        <div class="contenedor2">
-
-            <div class="filter-section-parent">
-                <div class="filter-section">
-                    <div class="filterIcon-div">
-                        <i class="filterIcon" onclick="toggleFilters()"><img width="40" height="40" src="https://img.icons8.com/ios-filled/50/filter--v1.png" alt="filter--v1"/><div class="filter-counter" style="display: none;"></div></i>
-                        <span class="filtros-span">Filtros</span>
-                    </div>
-                    <div class="filters" class="filters hidden">
-                        <details class="filter-group">
-                            <summary>Tipo de producto</summary>
-                            <label><input type="checkbox" id="vinilos-input"> Vinilos</label>
-                            <label><input type="checkbox" id="cds-input"> CDs</label>
-                            <label><input type="checkbox" id="cassettes-input"> Cassettes</label>
-                        </details>
-                        
-                        <details class="filter-group">
-                            <summary>Artista</summary>
-                            <label><input type="checkbox" id="artista1"> Billie Eilish</label>
-                            <label><input type="checkbox" id="artista2"> Lana Del Rey</label>
-                            <label><input type="checkbox" id="artista3"> Ethel Cain</label>
-                            <label><input type="checkbox" id="artista5"> Phoebe Bridgers</label>
-                        </details>
-                    </div>
-                </div>
-            </div>
-            <div class="contenedor-cards">
-                
-            </div>
-            
-        </div>
         
         
     </main>
@@ -153,7 +86,7 @@
     <style>body{font-family: "Nunito", sans-serif;}</style> 
 </body>
 <script src="../js/consts.js"></script>
+<script src="../js/producto.js"></script>
 <script src="../js/navbar.js"></script>
 <script src="../index.js"></script>
 </html>
-</a>

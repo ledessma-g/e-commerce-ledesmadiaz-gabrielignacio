@@ -1,0 +1,899 @@
+<div class="card vinyl">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta novedad">NOVEDAD</span>
+            <span class="etiqueta genero">ALT-POP</span>
+        </div>
+        <img class="imagenvinilo" src="vinyl.img/HMHAS-standard.webp" alt="HIT ME HARD AND SOFT - STANDARD VINYL">
+        <img class="imagenvinilo-hover" src="covers/HMHAS.webp" alt="">
+        <h3 class="titulo-card">BILLIE EILISH - HIT ME HARD AND SOFT - STANDARD VINYL</h3>
+        <p class="precio"><span class="exact-price">US$ 29.99</span></p>
+        <p class="STOCK">STOCK: 20</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card vinyl">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta novedad">NOVEDAD</span>
+            <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+            <span class="etiqueta genero">ALT-POP</span>
+        </div>
+        <img class="imagenvinilo" src="vinyl.img/HMHAS-exclusive.webp" alt="HIT ME HARD AND SOFT - EXCLUSIVE VINYL">
+        <img class="imagenvinilo-hover" src="covers/HMHAS.webp" alt="">
+        <h3 class="titulo-card">BILLIE EILISH - HIT ME HARD AND SOFT - EXCLUSIVE VINYL</h3>
+        <p class="precio"><span class="exact-price">US$ 39.99</span></p>
+        <p class="STOCK">STOCK: 22</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card vinyl">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta novedad">NOVEDAD</span>
+            <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+            <span class="etiqueta genero">ALT-POP</span>
+        </div>
+        <img class="imagenvinilo" src="vinyl.img/HMHAS-amazonexclusive.webp" alt="HIT ME HARD AND SOFT - AMAZON EXCLUSIVE VINYL">
+        <img class="imagenvinilo-hover" src="covers/HMHAS.webp" alt="">
+        <h3 class="titulo-card">BILLIE EILISH - HIT ME HARD AND SOFT - AMAZON EXCLUSIVE VINYL</h3>
+        <p class="precio"><span class="exact-price">US$ 34.99</span></p>
+        <p class="STOCK">STOCK: 5</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cds">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta novedad">NOVEDAD</span>
+            <span class="etiqueta genero">ALT-POP</span>
+        </div>
+        <img class="imagenvinilo" src="cd.img/HMHAS-standard.webp" alt="HIT ME HARD AND SOFT - STANDARD CD">
+        <img class="imagenvinilo-hover" src="covers/HMHAS.webp" alt="">
+        <h3 class="titulo-card">BILLIE EILISH - HIT ME HARD AND SOFT - STANDARD CD</h3>
+        <p class="precio"><span class="exact-price">US$ 12.99</span></p>
+        <p class="STOCK">STOCK: 16</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cds">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta novedad">NOVEDAD</span>
+            <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+            <span class="etiqueta firmada">EDICIÓN FIRMADA</span>
+            <span class="etiqueta limitada">EDICIÓN LIMITADA</span>
+            <span class="etiqueta genero">ALT-POP</span>
+        </div>
+        <img class="imagenvinilo" src="cd.img/HMHAS-signed.webp" alt="HIT ME HARD AND SOFT - SIGNED CD">
+        <img class="imagenvinilo-hover" src="covers/HMHAS.webp" alt="">
+        <h3 class="titulo-card">BILLIE EILISH - HIT ME HARD AND SOFT - SIGNED CD</h3>
+        <p class="precio"><span class="exact-price">US$ 17.99</span></p>
+        <p class="STOCK">STOCK: 2</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cds">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta novedad">NOVEDAD</span>
+            <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+            <span class="etiqueta limitada">EDICIÓN LIMITADA</span>
+            <span class="etiqueta genero">ALT-POP</span>
+        </div>
+        <img class="imagenvinilo" src="cd.img/HMHAS-splatterpaint.webp" alt="HIT ME HARD AND SOFT - SPLATTER PAINT CD">
+        <img class="imagenvinilo-hover" src="covers/HMHAS.webp" alt="">
+        <h3 class="titulo-card">BILLIE EILISH - HIT ME HARD AND SOFT - SPLATTER PAINT CD</h3>
+        <p class="precio"><span class="exact-price">US$ 19.99</span></p>
+        <p class="STOCK">STOCK: 6</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cassettes">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta novedad">NOVEDAD</span>
+            <span class="etiqueta oferta">OFERTA</span>
+            <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+            <span class="etiqueta limitada">EDICIÓN LIMITADA</span>
+            <span class="etiqueta genero">ALT-POP</span>
+        </div> 
+        <img class="imagenvinilo" src="cassette.img/HMHAS-blue.webp" alt="HIT ME HARD AND SOFT - BLUE CASSETTE">
+        <img class="imagenvinilo-hover" src="covers/HMHAS.webp" alt="">
+        <h3 class="titulo-card">BILLIE EILISH - HIT ME HARD AND SOFT - BLUE CASSETTE</h3>
+        <p class="precio"><span style="text-decoration: line-through;">US$ 17.99</span> <span class="exact-price">US$ 9.99</span></p>
+        <p class="STOCK">STOCK: 21</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cassettes">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta novedad">NOVEDAD</span>
+            <span class="etiqueta oferta">OFERTA</span>
+            <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+            <span class="etiqueta limitada">EDICIÓN LIMITADA</span>
+            <span class="etiqueta genero">ALT-POP</span>
+        </div> 
+        <img class="imagenvinilo" src="cassette.img/HMHAS-UKexlc.webp" alt="HIT ME HARD AND SOFT - UK EXCLUSIVE">
+        <img class="imagenvinilo-hover" src="covers/HMHAS.webp" alt="">
+        <h3 class="titulo-card">BILLIE EILISH - HIT ME HARD AND SOFT - UK EXCLUSIVE CASSETTE</h3>
+        <p class="precio"><span style="text-decoration: line-through;">US$ 17.99</span> <span class="exact-price">US$ 9.99</span></p>
+        <p class="STOCK">STOCK: 19</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card vinyl">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta genero">ALT-POP</span>
+        </div> 
+        <img class="imagenvinilo" src="vinyl.img/HTE-standard.webp" alt="HTE - STANDARD">
+        <img class="imagenvinilo-hover" src="covers/HTE.webp" alt="">
+        <h3 class="titulo-card">BILLIE EILISH - HAPPIER THAN EVER - STANDARD VINYL</h3>
+        <p class="precio"><span class="exact-price">US$ 29.99</span></p>
+        <p class="STOCK">STOCK: 11</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card vinyl">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+            <span class="etiqueta genero">ALT-POP</span>
+        </div> 
+        <img class="imagenvinilo" src="vinyl.img/HTE-exclusivegoldenyellow.webp" alt="HTE - EXCLUSIVE GOLDEN YELLOW">
+        <img class="imagenvinilo-hover" src="covers/HTE.webp" alt="">
+        <h3 class="titulo-card">BILLIE EILISH - HAPPIER THAN EVER - EXCLUSIVE GOLDEN YELLOW VINYL</h3>
+        <p class="precio"><span class="exact-price">US$ 34.99</span></p>
+        <p class="STOCK">STOCK: 6</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cassettes">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+            <span class="etiqueta limitada">EDICIÓN LIMITADA</span>
+            <span class="etiqueta genero">ALT-POP</span>
+        </div> 
+        <img class="imagenvinilo" src="cassette.img/HTE-brownexclusive.webp" alt="HAPPIER THAN EVER - BROWN EXCLUSIVE">
+        <img class="imagenvinilo-hover" src="covers/HTE.webp" alt="">
+        <h3 class="titulo-card">BILLIE EILISH - HAPPIER THAN EVER - BROWN EXCLUSIVE CASSETTE</h3>
+        <p class="precio"><span class="exact-price">US$ 14.99</span></p>
+        <p class="STOCK">STOCK: 14</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cassettes">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta oferta">OFERTA</span>
+            <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+            <span class="etiqueta limitada">EDICIÓN LIMITADA</span>
+            <span class="etiqueta genero">ALT-POP</span>
+        </div> 
+        <img class="imagenvinilo" src="cassette.img/HTE-greenexclusive.webp" alt="HAPPIER THAN EVER - MINT GREEN EXCLUSIVE">
+        <img class="imagenvinilo-hover" src="covers/HTE.webp" alt="">
+        <h3 class="titulo-card">BILLIE EILISH - HAPPIER THAN EVER - MINT GREEN EXCLUSIVE CASSETTE</h3>
+        <p class="precio"><span style="text-decoration: line-through;">US$ 14.99</span> <span class="exact-price">US$ 9.99</span></p>
+        <p class="STOCK">STOCK: 13</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+
+
+<div class="card cds">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta genero">ALT-POP</span>
+        </div>
+        <img class="imagenvinilo" src="cd.img/HTE.webp" alt="HAPPIER THAN EVER">
+        <img class="imagenvinilo-hover" src="covers/HTE.webp" alt="">
+        <h3 class="titulo-card">BILLIE EILISH - HAPPIER THAN EVER - CD</h3>
+        <p class="precio"><span class="exact-price">US$ 12.99</span></p>
+        <p class="STOCK">STOCK: 13</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card vinyl">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+            <span class="etiqueta limitada">EDICIÓN LIMITADA</span>
+            <span class="etiqueta genero">DREAM POP / ROCK</span>
+        </div> 
+        <img class="imagenvinilo" src="vinyl.img/UV-altedition.webp" alt="ULTRAVIOLENCE - ALT EDITION">
+        <img class="imagenvinilo-hover" src="covers/UV-ALT.jpeg" alt="">
+        <h3 class="titulo-card">LANA DEL REY - ULTRAVIOLENCE - EXCLUSIVE VINYL EDITION</h3>
+        <p class="precio"><span class="exact-price">US$ 39.99</span></p>
+        <p class="STOCK">STOCK: 10</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card vinyl">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta limitada">EDICIÓN LIMITADA</span>
+            <span class="etiqueta genero">ALT-POP</span>
+        </div> 
+        <img class="imagenvinilo" src="vinyl.img/BLUEBANISTERS-transparente.png" alt="BLUE BANISTERS - CLEAR VINYL">
+        <img class="imagenvinilo-hover" src="covers/BLUEBANISTERS.webp" alt="">
+        <h3 class="titulo-card">LANA DEL REY - BLUE BANISTERS - LIMITED WHITE VINYL</h3>
+        <p class="precio"><span class="exact-price">US$ 24.99</span></p>
+        <p class="STOCK">STOCK: 30</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cds">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta genero">ALT-POP</span>
+        </div>
+        <img class="imagenvinilo" src="cd.img/BLUEBANISTERS.png" alt="BLUE BANISTERS">
+        <img class="imagenvinilo-hover" src="covers/BLUEBANISTERS.webp" alt="">
+        <h3 class="titulo-card">LANA DEL REY - BLUE BANISTERS - CD</h3>
+        <p class="precio"><span class="exact-price">US$ 14.99</span></p>
+        <p class="STOCK">STOCK: 12</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cassettes">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta genero">ALT-POP</span>
+        </div> 
+        <img class="imagenvinilo" src="cassette.img/BLUEBANISTERS.webp" alt="BLUE BANISTERS">
+        <img class="imagenvinilo-hover" src="covers/BLUEBANISTERS.webp" alt="">
+        <h3 class="titulo-card">LANA DEL REY - BLUE BANISTERS - CASSETTE</h3>
+        <p class="precio"><span class="exact-price">US$ 12.99</span></p>
+        <p class="STOCK">STOCK: 14</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card vinyl">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+            <span class="etiqueta genero">FOLK POP / SOFT ROCK</span>
+        </div> 
+        <img class="imagenvinilo" src="vinyl.img/CHEMTRAILS-exclusivatransparente.png" alt="CHEMTRAILS - TRANSPARENT VINYL">
+        <img class="imagenvinilo-hover" src="covers/CHEMTRAILS.webp" alt="">
+        <h3 class="titulo-card">LANA DEL REY - CHEMTRAILS OVER THE COUNTRY CLUB - EXCLUSIVE TRANSPARENT VINYL</h3>
+        <p class="precio"><span class="exact-price">US$ 34.99</span></p>
+        <p class="STOCK">STOCK: 10</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cds">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta oferta">OFERTA</span>
+            <span class="etiqueta genero"> FOLK POP / SOFT ROCK</span>
+        </div>
+        <img class="imagenvinilo" src="cd.img/CHEMTRAILS.png" alt="CHEMTRAILS OVER THE COUNTRY CLUB">
+        <img class="imagenvinilo-hover" src="covers/CHEMTRAILS.webp" alt="">
+        <h3 class="titulo-card">LANA DEL REY - CHEMTRAILS OVER THE COUNTRY CLUB - CD</h3>
+        <p class="precio"><span style="text-decoration: line-through;">US$ 17.99</span> <span class="exact-price">US$ 13.99</span></p>
+        <p class="STOCK">STOCK: 12</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cassettes">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta genero">FOLK POP / SOFT ROCK</span>
+        </div> 
+        <img class="imagenvinilo" src="cassette.img/CHEMTRAILS.webp" alt="CHEMTRAILS">
+        <img class="imagenvinilo-hover" src="covers/CHEMTRAILS.webp" alt="">
+        <h3 class="titulo-card">LANA DEL REY - CHEMTRAILS OVER THE COUNTRY CLUB - CASSETTE</h3>
+        <p class="precio"><span class="exact-price">US$ 12.99</span></p>
+        <p class="STOCK">STOCK: 17</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card vinyl">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta genero">ALT-POP</span>
+        </div> 
+        <img class="imagenvinilo" src="vinyl.img/OCEANBLVD-standard.png" alt="OCEAN BLVD - STANDARD">
+        <img class="imagenvinilo-hover" src="covers/OCEANBLVD.jpeg" alt="">
+        <h3 class="titulo-card">LANA DEL REY - OCEAN BLVD - STANDARD VINYL</h3>
+        <p class="precio"><span class="exact-price">US$ 29.99</span></p>
+        <p class="STOCK">STOCK: 45</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card vinyl">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+            <span class="etiqueta genero">ALT-POP</span>
+        </div> 
+        <img class="imagenvinilo" src="vinyl.img/OCEANBLVD-targetexclusive.png" alt="OCEAN BLVD - TARGET EXCLUSIVE">
+        <img class="imagenvinilo-hover" src="covers/OCEANBLVD-TARGET.jpeg" alt="">
+        <h3 class="titulo-card">LANA DEL REY - OCEAN BLVD - TARGET EXCLUSIVE VINYL</h3>
+        <p class="precio"><span class="exact-price">US$ 34.99</span></p>
+        <p class="STOCK">STOCK: 4</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card vinyl">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta novedad">NOVEDAD</span>
+            <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+            <span class="etiqueta genero">ALT-POP</span>
+        </div> 
+        <img class="imagenvinilo" src="vinyl.img/OCEANBLVD-festivaledition-vinilonaranja.png" alt="OCEAN BLVD - FESTIVAL EDITION">
+        <img class="imagenvinilo-hover" src="covers/OCEANBLVD.jpeg" alt="">
+        <h3 class="titulo-card">LANA DEL REY - OCEAN BLVD - FESTIVAL EDITION / ORANGE VINYL</h3>
+        <p class="precio"><span class="exact-price">US$ 39.99</span></p>
+        <p class="STOCK">STOCK: 1</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cds">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta genero">ALT-POP</span>
+        </div>
+        <img class="imagenvinilo" src="cd.img/OCEANBLVD.webp" alt="OCEAN BLVD - STANDARD CD">
+        <img class="imagenvinilo-hover" src="covers/OCEANBLVD.jpeg" alt="">
+        <h3 class="titulo-card">LANA DEL REY - OCEAN BLVD - STANDARD CD</h3>
+        <p class="precio"><span class="exact-price">US$ 14.99</span></p>
+        <p class="STOCK">STOCK: 6</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cds">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+            <span class="etiqueta limitada">EDICIÓN LIMITADA</span>
+            <span class="etiqueta genero">ALT-POP</span>
+        </div>
+        <img class="imagenvinilo" src="cd.img/OCEANBLVD-altcover.webp" alt="OCEAN BLVD - ALT COVER">
+        <img class="imagenvinilo-hover" src="covers/OCEANBLVD-ALT1.webp" alt="">
+        <h3 class="titulo-card">LANA DEL REY - OCEAN BLVD - ALTERNATIVE COVER CD</h3>
+        <p class="precio"><span class="exact-price">US$ 17.99</span></p>
+        <p class="STOCK">STOCK: 19</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cassettes">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta genero">ALT-POP</span>
+        </div> 
+        <img class="imagenvinilo" src="cassette.img/OCEANBLVD-standard.webp" alt="OCEAN BLVD - STANDARD">
+        <img class="imagenvinilo-hover" src="covers/OCEANBLVD.jpeg" alt="">
+        <h3 class="titulo-card">LANA DEL REY - OCEAN BLVD - STANDARD CASSETTE</h3>
+        <p class="precio"><span class="exact-price">US$ 13.99</span></p>
+        <p class="STOCK">STOCK: 12</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cassettes">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta oferta">OFERTA</span>
+            <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+            <span class="etiqueta genero">ALT-POP</span>
+        </div> 
+        <img class="imagenvinilo" src="cassette.img/OCEANBLVD-altcover.webp" alt="OCEAN BLVD - ALT COVER 1">
+        <img class="imagenvinilo-hover" src="covers/OCEANBLVD-ALT1.webp" alt="">
+        <h3 class="titulo-card">LANA DEL REY - OCEAN BLVD - ALTERNATIVE COVER 1 CASSETTE</h3>
+        <p class="precio"><span style="text-decoration: line-through;">US$ 17.99</span> <span class="exact-price">US$ 11.99</span></p>
+        <p class="STOCK">STOCK: 6</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cassettes">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta oferta">OFERTA</span>
+            <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+            <span class="etiqueta genero">ALT-POP</span>
+        </div> 
+        <img class="imagenvinilo" src="cassette.img/OCEANBLVD-altcover2.webp" alt="OCEAN BLVD - ALT COVER 2">
+        <img class="imagenvinilo-hover" src="covers/OCEANBLVD-TARGET.jpeg" alt="">
+        <h3 class="titulo-card">LANA DEL REY - OCEAN BLVD - ALTERNATIVE COVER 2 CASSETTE</h3>
+        <p class="precio"><span style="text-decoration: line-through;">US$ 17.99</span> <span class="exact-price">US$ 11.99</span></p>
+        <p class="STOCK">STOCK: 18</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card vinyl">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta oferta">OFERTA</span>
+            <span class="etiqueta genero">SLOWCORE</span>
+        </div> 
+        <img class="imagenvinilo" src="vinyl.img/PREACHERSDAUGTHER-standard.png" alt="PREACHER'S DAUGHTER - STANDARD">
+        <img class="imagenvinilo-hover" src="covers/PREACHERSDAUGHTER.jpeg" alt="">
+        <h3 class="titulo-card">ETHEL CAIN - PREACHER'S DAUGHTER - STANDARD VINYL</h3>
+        <p class="precio"><span style="text-decoration: line-through;">US$ 24.99</span> <span class="exact-price">US$ 14.99</span></p>
+        <p class="STOCK">STOCK: 10</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card vinyl">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta oferta">OFERTA</span>
+            <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+            <span class="etiqueta genero">SLOWCORE</span>
+        </div> 
+        <img class="imagenvinilo" style="object-fit: contain;" src="vinyl.img/PREACHERSDAUGTHER-exclusiveedition.png" alt="PRAECHER'S DAUGHTER - EXCLUSIVE">
+        <img class="imagenvinilo-hover" src="covers/PREACHERSDAUGHTER.jpeg" alt="">
+        <h3 class="titulo-card" >ETHEL CAIN - PREACHER'S DAUGHTER - EXCLUSIVE VINYL EDITION</h3>
+        <p class="precio"><span style="text-decoration: line-through;">US$ 29.99</span> <span class="exact-price">US$ 19.99</span></p>
+        <p class="STOCK">STOCK: 8</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cds">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta genero">SLOWCORE</span>
+        </div>
+        <img class="imagenvinilo" src="cd.img/PREACHERSDAUGTHER.png" alt="PREACHERSDAUGHTER">
+        <img class="imagenvinilo-hover" src="covers/PREACHERSDAUGHTER.jpeg" alt="">
+        <h3 class="titulo-card">ETHEL CAIN - PREACHERS DAUGHTER - CD</h3>
+        <p class="precio"><span class="exact-price">US$ 12.99</span></p>
+        <p class="STOCK">STOCK: 21</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cds">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta oferta">OFERTA</span>
+            <span class="etiqueta genero">DREAM POP / SLOWCORE</span>
+        </div>
+        <img class="imagenvinilo" src="cd.img/INBRED.png" alt="INBRED">
+        <img class="imagenvinilo-hover" src="covers/INBRED.jpg" alt="">
+        <h3 class="titulo-card">ETHEL CAIN - INBRED - PHYSICAL EDITION (CD)</h3>
+        <p class="precio"><span style="text-decoration: line-through;">US$ 14.99</span> <span class="exact-price">US$ 7.99</span></p>
+        <p class="STOCK">STOCK: 1</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cassettes">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta oferta">OFERTA</span>
+            <span class="etiqueta genero">DREAM POP / SLOWCORE</span>
+        </div> 
+        <img class="imagenvinilo" src="cassette.img/INBRED.png" alt="INBRED">
+        <img class="imagenvinilo-hover" src="covers/INBRED.jpg" alt="">
+        <h3 class="titulo-card">ETHEL CAIN - INBRED - PHYSICAL EDITION (CASSETTE)</h3>
+        <p class="precio"><span style="text-decoration: line-through;">US$ 12.99</span> <span class="exact-price">US$ 7.99</span></p>
+        <p class="STOCK">STOCK: 3</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cds">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta genero">DREAM POP / SLOWCORE</span>
+        </div>
+        <img class="imagenvinilo" src="cd.img/GOLDENAGE.png" alt="GOLDEN AGE">
+        <img class="imagenvinilo-hover" src="covers/GOLDENAGE.jpg" alt="">
+        <h3 class="titulo-card">ETHEL CAIN - GOLDEN AGE - CD</h3>
+        <p class="precio"><span class="exact-price">US$ 14.99</span></p>
+        <p class="STOCK">STOCK: 18</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cassettes">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta genero">DREAM POP / SLOWCORE</span>
+        </div> 
+        <img class="imagenvinilo" src="cassette.img/GOLDENAGE.png" alt="GOLDEN AGE">
+        <img class="imagenvinilo-hover" src="covers/GOLDENAGE.jpg" alt="">
+        <h3 class="titulo-card">ETHEL CAIN - GOLDEN AGE - CASSETTE</h3>
+        <p class="precio"><span class="exact-price">US$ 9.99</span></p>
+        <p class="STOCK">STOCK: 20</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card vinyl">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta genero">ART POP / PIANO ROCK</span>
+        </div> 
+        <img class="imagenvinilo" src="vinyl.img/NFR.webp" alt="NORMAN FUCKING ROCKWELL - STANDARD VINYL">
+        <img class="imagenvinilo-hover" src="covers/NFR.jpeg" alt="">
+        <h3 class="titulo-card">LANA DEL REY - NORMAN FUCKING ROCKWELL! - VINYL</h3>
+        <p class="precio"><span class="exact-price">US$ 39.99</span></p>
+        <p class="STOCK">STOCK: 14</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cds">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta genero">ART POP / PIANO ROCK</span>
+        </div>
+        <img class="imagenvinilo" src="cd.img/NFR.webp" alt="NORMAN FUCKING ROCKWELL">
+        <img class="imagenvinilo-hover" src="covers/NFR.jpeg" alt="">
+        <h3 class="titulo-card">LANA DEL REY - NORMAN FUCKING ROCKWELL! - CD</h3>
+        <p class="precio"><span class="exact-price">US$ 12.99</span></p>
+        <p class="STOCK">STOCK: 23</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cds">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta oferta">OFERTA</span>
+            <span class="etiqueta genero">INDIE POP</span>
+        </div>
+        <img class="imagenvinilo" src="cd.img/AKALIZZYGRANT.png" alt="AKA LIZZY GRANT">
+        <img class="imagenvinilo-hover" src="covers/AKALIZZYGRANT.webp" alt="">
+        <h3 class="titulo-card">LANA DEL REY - A.K.A. LIZZY GRANT - CD</h3>
+        <p class="precio"><span style="text-decoration: line-through;">US$ 16.99</span> <span class="exact-price">US$ 9.99</span></p>
+        <p class="STOCK">STOCK: 10</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cassettes">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta oferta">OFERTA</span>
+            <span class="etiqueta genero">INDIE POP</span>
+        </div> 
+        <img class="imagenvinilo" src="cassette.img/AKALIZZYGRANT.png" alt="AKA LIZZY GRANT">
+        <img class="imagenvinilo-hover" src="covers/AKALIZZYGRANT.webp" alt="">
+        <h3 class="titulo-card">LANA DEL REY - A.K.A. LIZZY GRANT - CASSETTE</h3>
+        <p class="precio"><span style="text-decoration: line-through;">US$ 12.99</span> <span class="exact-price">US$ 4.99</span></p>
+        <p class="STOCK">STOCK: 7</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card vinyl">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta genero">ALT-POP / ELECTROPOP</span>
+        </div> 
+        <img class="imagenvinilo" src="vinyl.img/DONTSMILEATME.webp" alt="DON'T SMILE AT ME">
+        <img class="imagenvinilo-hover" src="covers/DONTSMILEATME.webp" alt="">
+        <h3 class="titulo-card">BILLIE EILISH - DON'T SMILE AT ME - VINYL</h3>
+        <p class="precio"><span class="exact-price">US$ 24.99</span></p>
+        <p class="STOCK">STOCK: 5</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cds">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta genero">ALT-POP / ELECTROPOP</span>
+        </div>
+        <img class="imagenvinilo" src="cd.img/DONTSMILEATME.png" alt="DONT SMILE AT ME">
+        <img class="imagenvinilo-hover" src="covers/DONTSMILEATME.webp" alt="">
+        <h3 class="titulo-card">BILLIE EILISH - DONT SMILE AT ME - CD</h3>
+        <p class="precio"><span class="exact-price">US$ 12.99</span></p>
+        <p class="STOCK">STOCK: 8</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cassettes">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta genero">ALT-POP</span>
+        </div> 
+        <img class="imagenvinilo" src="cassette.img/DONTSMILEATME.png" alt="DONT SMILE AT ME">
+        <img class="imagenvinilo-hover" src="covers/DONTSMILEATME.webp" alt="">
+        <h3 class="titulo-card">BILLIE EILISH - DONT SMILE AT ME - CASSETTE</h3>
+        <p class="precio"><span class="exact-price">US$ 12.99</span></p>
+        <p class="STOCK">STOCK: 9</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card vinyl">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta genero">ART ROCK</span>
+        </div> 
+        <img class="imagenvinilo" src="vinyl.img/ALLBORNSCREAMING-standard.png" alt="ALL BORN SCREAMING - STANDARD VINYL">
+        <img class="imagenvinilo-hover" src="covers/ALLBORNSCREAMING.webp" alt="">
+        <h3 class="titulo-card">ST. VINCENT - ALL BORN SCREAMING - STANDARD VINYL</h3>
+        <p class="precio"><span class="exact-price">US$ 24.99</span></p>
+        <p class="STOCK">STOCK: 13</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card vinyl">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+            <span class="etiqueta limitada">EDICIÓN LIMITADA</span>
+            <span class="etiqueta genero">ART ROCK</span>
+        </div> 
+        <img class="imagenvinilo" src="vinyl.img/ALLBORNSCREAMING-limitedrededition.webp" alt="ALL BORN SCREAMING - LIMITED RED EDITION">
+        <img class="imagenvinilo-hover" src="covers/ALLBORNSCREAMING.webp" alt="">
+        <h3 class="titulo-card">ST. VINCENT - ALL BORN SCREAMING - LIMITED RED VINYL EDITION</h3>
+        <p class="precio"><span class="exact-price">US$ 29.99</span></p>
+        <p class="STOCK">STOCK: 3</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cds">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta genero">ART ROCK</span>
+        </div>
+        <img class="imagenvinilo" src="cd.img/ALLBORNSCREAMING.webp" alt="ALL BORN SCREAMING">
+        <img class="imagenvinilo-hover" src="covers/ALLBORNSCREAMING.webp" alt="">
+        <h3 class="titulo-card">ST. VINCENT - ALL BORN SCREAMING - CD</h3>
+        <p class="precio"><span class="exact-price">US$ 14.99</span></p>
+        <p class="STOCK">STOCK: 11</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card vinyl">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta genero">HIP HOP / JAZZ RAP</span>
+        </div> 
+        <img class="imagenvinilo" src="vinyl.img/TOPIMPABUTTERFLY.webp" alt="TO PIMP A BUTTERFLY">
+        <img class="imagenvinilo-hover" src="covers/TOPIMPABUTTERFLY.webp" alt="">
+        <h3 class="titulo-card">KENDRICK LAMAR - TO PIMP A BUTTERFLY - VINYL</h3>
+        <p class="precio"><span class="exact-price">US$ 29.99</span></p>
+        <p class="STOCK">STOCK: 18</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cds">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta oferta">OFERTA</span>
+            <span class="etiqueta exclusiva">EDICIÓN EXCLUSIVA</span>
+            <span class="etiqueta limitada">EDICIÓN LIMITADA</span>
+            <span class="etiqueta genero">HIP HOP / TRAP</span>
+        </div>
+        <img class="imagenvinilo" src="cd.img/DAMN.-COLLECTORS-EDITION.png" alt="DAMN. COLLECTORS EDITION">
+        <img class="imagenvinilo-hover" src="covers/DAMN.-COLLECTORS.webp" alt="">
+        <h3 class="titulo-card">KECNDRICK LAMAR - DAMN. - COLLECTORS EDITION CD</h3>
+        <p class="precio"><span style="text-decoration: line-through;">US$ 24.99</span> <span class="exact-price">US$ 14.99</span></p>
+        <p class="STOCK">STOCK: 16</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card vinyl">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta oferta">OFERTA</span>
+            <span class="etiqueta genero">INDIE FOLK</span>
+        </div> 
+        <img class="imagenvinilo" src="vinyl.img/PUNISHER.png" alt="PUNISHER">
+        <img class="imagenvinilo-hover" src="covers/PUNISHER.jpg" alt="">
+        <h3 class="titulo-card">PHOEBE BRIDGERS - PUNISHER - VINYL</h3>
+        <p class="precio"><span style="text-decoration: line-through;">US$ 24.99</span> <span class="exact-price">US$ 19.99</span></p>
+        <p class="STOCK">STOCK: 9</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cds">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta genero">INDIE FOLK</span>
+        </div>
+        <img class="imagenvinilo" src="cd.img/PUNISHER.png" alt="PUNISHER">
+        <img class="imagenvinilo-hover" src="covers/PUNISHER.jpg" alt="">
+        <h3 class="titulo-card">PHOEBE BRIDGERS - PUNISHER - CD</h3>
+        <p class="precio"><span class="exact-price">US$ 14.99</span></p>
+        <p class="STOCK">STOCK: 9</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cassettes">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta oferta">OFERTA</span>
+            <span class="etiqueta genero">INDIE FOLK</span>
+        </div> 
+        <img class="imagenvinilo" src="cassette.img/PUNISHER.png" alt="PUNISHER">
+        <img class="imagenvinilo-hover" src="covers/PUNISHER.jpg" alt="">
+        <h3 class="titulo-card">PHOEBE BRIDGERS - PUNISHER - CASSETTE</h3>
+        <p class="precio"><span style="text-decoration: line-through;">US$ 12.99</span> <span class="exact-price">US$ 7.99</span></p>
+        <p class="STOCK">STOCK: 3</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card vinyl">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta oferta">OFERTA</span>
+            <span class="etiqueta genero">PIANO ROCK</span>
+        </div> 
+        <img class="imagenvinilo" src="vinyl.img/WHENTHEPAWN.png" alt="WHEN THE PAWN">
+        <img class="imagenvinilo-hover" src="covers/WHENTHEPAWN.webp" alt="">
+        <h3 class="titulo-card">FIONA APPLE - WHEN THE PAWN... - VINYL</h3>
+        <p class="precio"><span style="text-decoration: line-through;">US$ 24.99</span> <span class="exact-price">US$ 14.99</span></p>
+        <p class="STOCK">STOCK: 2</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cds">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta genero">PIANO ROCK</span>
+        </div>
+        <img class="imagenvinilo" src="cd.img/WHENTHEPAWN.png" alt="WHEN THE PAWN...">
+        <img class="imagenvinilo-hover" src="covers/WHENTHEPAWN.webp" alt="">
+        <h3 class="titulo-card">FIONA APPLE - WHEN THE APPLE... - CD</h3>
+        <p class="precio"><span class="exact-price">US$ 17.99</span></p>
+        <p class="STOCK">STOCK: 20</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card vinyl">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta genero">CONTEMPORARY FOLK</span>
+        </div> 
+        <img class="imagenvinilo" src="vinyl.img/WHYDOESTHEEARTH.png" alt="WHY DOES THE EARTH...">
+        <img class="imagenvinilo-hover" src="covers/WHYDOESTHEEARTH.jpeg" alt="">
+        <h3 class="titulo-card">KARA JACKSON - WHY DOES THE EARTH GIVE US PEOPLE TO LOVE? - VINYL</h3>
+        <p class="precio"><span class="exact-price">US$ 24.99</span></p>
+        <p class="STOCK">STOCK: 4</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card cds">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta oferta">OFERTA</span>
+            <span class="etiqueta genero">CONTEMPORARY FOLK</span>
+        </div>
+        <img class="imagenvinilo" src="cd.img/WHYDOESTHEEARTH.png" alt="WHY DOES THE EARTH...">
+        <img class="imagenvinilo-hover" src="covers/WHYDOESTHEEARTH.jpeg" alt="">
+        <h3 class="titulo-card">KARA JACKSON - WHY DOES THE EARTH GIVE US PEOPLE TO LOVE? - CD</h3>
+        <p class="precio"><span style="text-decoration: line-through;">US$ 14.99</span> <span class="exact-price">US$ 4.99</span></p>
+        <p class="STOCK">STOCK: 5</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card vinyl">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta genero">INDIE ROCK</span>
+        </div> 
+        <img class="imagenvinilo" src="vinyl.img/WHATEVERPEOPLESAYIAM.png" alt="WHATEVER PEOPLE SAY I AM...">
+        <img class="imagenvinilo-hover" src="covers/WHATEVERPEOPLESAYIAM.webp" alt="">
+        <h3 class="titulo-card">ARTIC MONKEYS - WHATEVER PEOPLE SAY I AM, THAT'S WHAT I'M NOT - VINYL</h3>
+        <p class="precio"><span class="exact-price">US$ 24.99</span></p>
+        <p class="STOCK">STOCK: 11</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>
+
+<div class="card vinyl">
+    <a class="enlace-card" href="">
+        <div class="etiqueta-div">
+            <span class="etiqueta oferta">OFERTA</span>
+            <span class="etiqueta genero">ART ROCK / SOUL</span>
+        </div> 
+        <img class="imagenvinilo" style="object-fit: contain;" src="vinyl.img/DADDYSHOME.webp" alt="DADDY'S HOME">
+        <img class="imagenvinilo-hover" src="covers/DADDYSHOME.webp" alt="">
+        <h3 class="titulo-card">ST. VINCENT - DADDY'S HOME - VINYL</h3>
+        <p class="precio"><span style="text-decoration: line-through;">US$ 44.99</span> <span class="exact-price">US$ 39.99</span></p>
+        <p class="STOCK">STOCK: 4</p>
+        <br>
+    </a>
+    <a id="carrito" role="button" href="">Ver más</a>
+</div>

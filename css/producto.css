@@ -1,0 +1,96 @@
+main{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: start;
+    align-content: flex-start;
+    z-index: 2;
+    background-color: #CDC2A5;
+    margin: 2% 3% 3% 3%;
+    padding: 2%;
+    text-align: center;
+    border: 5px;
+    border-radius: 20px;
+    width: auto;
+}
+
+.contenedor-card-producto {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    width: 90%;
+}
+
+.imagen {
+    width: 40%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    padding: 15px;
+}
+
+.etiqueta-div{
+    align-self: flex-start;
+    justify-self: start;
+}
+
+.imagen img {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+    transition: opacity 0.3s ease-in-out; /* Transición suave al cambiar de imagen */
+    cursor: pointer;
+    justify-self: center;
+    filter: drop-shadow(rgb(39, 39, 39) 4px 4px 4px);
+}
+
+.contenido {
+    width: 55%; /* El 55% para el contenido */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.descripcion {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.descripcion span {
+    display: block;
+    margin-top: 5px;
+    color: #555;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.precio-div{
+    display: flex;
+    justify-content: center;
+    column-gap: 7px;
+    font-size: larger;
+}
+
+.carrito {
+    background-color: #457b9d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.carrito:hover {
+    background-color: #1d3557;
+}
