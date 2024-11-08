@@ -23,11 +23,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #F8D082;
+    background-color: #EAE4DD;
 }
 
 .logo {
-    filter: drop-shadow(5px 5px 5px rgba(181,27,117,1));
+    
+    filter: drop-shadow(0px 0px 8px rgb(73, 73, 73));
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -63,7 +64,7 @@ body {
 }
 
 .login-container {
-    background-color: #ffca60;
+    background-color: #CDC2A5;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -102,7 +103,7 @@ body {
 .login-form button {
     width: 100%;
     padding: 10px;
-    background-color: #c5378a;
+    background-color: #295f98;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -111,5 +112,5 @@ body {
 }
 
 .login-form button:hover {
-    background-color: #b63480;
+    background-color: #306dad;
 }

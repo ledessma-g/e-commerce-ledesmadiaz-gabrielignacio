@@ -8,41 +8,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <title>Iniciar sesión</title>
-    <link rel="shortcut icon" href="../img/logo.png">
+    <link rel="shortcut icon" href="../img/vinyl.svg">
 </head>
 <body>
     <div class="contenedor">
         <div class="logo">
-            <img src="../img/logo.png" alt="logo">
+            <img src="../img/vinyl.svg" alt="logo">
         </div>
         <div class="login-container">
-            <form class="login-form" action="#" onsubmit="return validarFormulario();">
-                <h2> INICIAR SESIÓN </h2>
-                <input type="text" id="username" placeholder="Nombre de usuario" required>
+            <form class="login-form">
+                <h2>Iniciar sesión</h2>
+                <input type="text" id="username" placeholder="Usuario o e-mail" required>
                 <input type="password" id="password" placeholder="Contraseña" required>
-                <div id="error-msg" style="color: red; display: none;"> Usuario o contraseña incorrectos. Inténtelo de nuevo.</div>
-                <button type="button" onclick="validarFormulario()"> Ingresar </button>
-
+                <div id="error-msg" style="color: red; display: none;">Credenciales incorrectas. Inténtelo de nuevo.</div>
+                <button type="submit">Ingresar</button>
             </form>
         </div>
     </div>
-    <script>
-        function validarFormulario(){
-    const username= document.getElementById('username').value
-    const password= document.getElementById('password').value
-    const errorMsg = document.getElementById('error-msg');
-
-    const correctusername = 'user';
-    const correctpassword = '123';
-
-    if(username === correctusername && password === correctpassword) {
-            alert('Inicio de sesión exitoso');
-            window.location.href = '../inicio.html';
-    } else {
-        errorMsg.style.display = 'block'; 
-                return false; 
-     }
-}    
-    </script>
+    <script src="../js/login.js"></script>
 </body>
 </html>

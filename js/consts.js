@@ -150,9 +150,9 @@ const navbarItems = [{
   "classExtra": "cart"
 }, {
   "name": "Login",
-  "text": "Login",
+  "text": "Iniciar sesión",
   "icono": '<img width="50" height="50" src="https://img.icons8.com/ios-filled/50/login-rounded-right.png" alt="login-rounded-right"/>',
-  "href": "login.html",
+  "href": "#",
   "classExtra": "loginnavbardiv"
 }
 

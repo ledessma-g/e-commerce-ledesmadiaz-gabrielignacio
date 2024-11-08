@@ -1,8 +1,11 @@
 const main = document.querySelector("main")
+const title = document.querySelector("title")
 
 let id = window.location.search.split("=")[1];
 
 let producto = data.find((product) => product.id == id);
+
+title.innerText = `${producto.title}`
 
 main.innerHTML = `
 <div class="contenedor-card-producto">
@@ -25,7 +28,18 @@ main.innerHTML = `
             <span class="exact-price">${producto.precio}</span>
           </div>
         </div>
-        <a class="carrito" role="button">Agregar al carrito</a>
+        ${localStorage.getItem("username") ?
+            `<div>
+            <button class="button-contador-iz" type="button" onclick="decreaseItem(${producto.id})">-</button>
+            <input type="number" id="cantidad-${producto.id}" class="input-cantidad" value="1" min="1" max="${producto.stock}" onchange="updateQuantity(${producto.id})"></input>
+            <button class="button-contador-de" type="button" onclick="increaseItem(${producto.id})">+</button>
+            </div>
+            <button type="button" class="carrito" onclick="addItems(${producto.id})">Agregar al carrito</button>
+              `
+            :
+            `<a href="login.html" class="carrito">Inicia sesión para comprar</a>`
+          } 
+        </div>
     </div>
 </div>
 `;
