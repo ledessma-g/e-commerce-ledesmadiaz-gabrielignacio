@@ -272,6 +272,7 @@ label:has(input:checked){
     font-size: 20px; 
     height: 42px;
     display: flex;
+    position: relative;
 }
 
 .navbaritems img{
@@ -533,6 +534,20 @@ input[type="number"] {
     border-radius: 100%;
 }
 
+#quantity{
+    font-style: normal;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    font-size: 12px;
+    width: 16px;
+    height: 16px;
+    background-color: red;
+    padding: 0.5px;
+    border-radius: 100%;
+    overflow: hidden;
+    text-align: center;
+}
 
 
 

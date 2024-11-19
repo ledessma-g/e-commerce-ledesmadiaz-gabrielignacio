@@ -32,6 +32,8 @@ updateNavButton();
 
 function logout() {
     localStorage.removeItem('username');
+    localStorage.removeItem('cart');
+    localStorage.removeItem('quantity');
     updateNavButton();
     window.location.href = "catalogo.html";
 }

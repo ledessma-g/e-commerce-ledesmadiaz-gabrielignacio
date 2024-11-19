@@ -15,6 +15,7 @@ loginForm.addEventListener('submit', function (e) {
 
     if (username === rightUser && contrasena === rightPassword) {
         localStorage.setItem('username', username);
+        localStorage.setItem('cart', JSON.stringify([]))
         
         window.location.href = 'catalogo.html';
     } else {

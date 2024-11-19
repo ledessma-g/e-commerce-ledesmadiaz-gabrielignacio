@@ -42,7 +42,7 @@ const fillCards = (items) => {
             <h3 class="titulo-card">${producto.title}</h3>
             <p class="precio">
                 <span class="non-price">${producto.precioNoOferta}</span> 
-                <span class="exact-price">${producto.precio}</span>
+                <span class="exact-price">$${producto.precio}</span>
             </p>
             <p class="STOCK">STOCK: ${producto.stock}</p>
             <br>
@@ -160,12 +160,16 @@ function updateFilterCounter() {
     }
 }
 
+const quantityCounter = document.getElementById("quantity");
+const quantity = localStorage.getItem("quantity");
+if (quantity > 0){
+    quantityCounter.style.display = "block";
+    quantityCounter.innerText = quantity;
+}
+else{
+    quantityCounter.style.display = "none";
+}
+
 document.querySelectorAll('.filters input[type="checkbox"]').forEach((checkbox) => {
     checkbox.addEventListener('change', updateFilterCounter);
 });
-
-
-
-
-
-  

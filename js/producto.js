@@ -17,18 +17,18 @@ main.innerHTML = `
         <img id="img-alterna2" src="${producto.imagenHover}">
     </div>
     <div class="contenido">
-        <h1>${producto.title}</h1>
+        <h2>${producto.title}</h2>
         <div class="descripcion">
           <p>${producto.descripcion}</p>
           <span>STOCK: ${producto.stock}</span>
           <span>TRACKS: ${producto.tracks}</span>
           <span>DURACIÓN: ${producto.duracion}</span>
           <div class="precio-div">
-            <span class="non-price">${producto.precioNoOferta}</span> 
-            <span class="exact-price">${producto.precio}</span>
+            <span class="non-price">$${producto.precioNoOferta}</span> 
+            <span class="exact-price">$${producto.precio}</span>
           </div>
         </div>
-        ${localStorage.getItem("username") ?
+        ${localStorage.getItem('username') ?
             `<div>
             <button class="button-contador-iz" type="button" onclick="decreaseItem(${producto.id})">-</button>
             <input type="number" id="cantidad-${producto.id}" class="input-cantidad" value="1" min="1" max="${producto.stock}" onchange="updateQuantity(${producto.id})"></input>
@@ -43,6 +43,50 @@ main.innerHTML = `
     </div>
 </div>
 `;
+
+const input = document.getElementById(`cantidad-${id}`);
+
+function increaseItem(id) {
+  const product = data.find(product => product.id === id);
+
+  if (product && typeof product.stock === "number") {
+    const maxStock = product.stock;
+
+    if (parseInt(input.value) < maxStock) {
+      input.value = parseInt(input.value) + 1;
+    }
+  }
+}
+
+function decreaseItem(id) {
+  if (parseInt(input.value) > 1) {
+    input.value = parseInt(input.value) - 1;
+  }
+}
+
+function addItems() {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  const idProduct = Number(window.location.search.split("=")[1]);
+  const quantityToAdd = Number(input.value) < 1 ? 1 : Number(input.value);
+  input.value = quantityToAdd;
+
+  const existingProductIndex = cart.findIndex(item => item.id === idProduct);
+
+  if (existingProductIndex !== -1) {
+    cart[existingProductIndex].quantity += quantityToAdd;
+  } else {
+    cart.push({ ...producto, id: idProduct, quantity: quantityToAdd });
+  }
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+
+  const quantity = cart.reduce((total, item) => total + item.quantity, 0);
+  localStorage.setItem("quantity", quantity);
+
+  const quantityTag = document.querySelector(".quantity");
+  quantityTag.innerText = quantity;
+}
 
 function alternarImagenes() {
     const img1 = document.getElementById('img-alterna1');
