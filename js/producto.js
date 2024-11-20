@@ -24,7 +24,7 @@ main.innerHTML = `
           <span>TRACKS: ${producto.tracks}</span>
           <span>DURACIÓN: ${producto.duracion}</span>
           <div class="precio-div">
-            <span class="non-price">$${producto.precioNoOferta}</span> 
+            <span class="non-price">${producto.precioNoOferta}</span> 
             <span class="exact-price">$${producto.precio}</span>
           </div>
         </div>
@@ -85,7 +85,15 @@ function addItems() {
   localStorage.setItem("quantity", quantity);
 
   const quantityTag = document.querySelector(".quantity");
-  quantityTag.innerText = quantity;
+
+  Toastify({
+    text: `${producto.title} ha sido agregado al carrito.`,
+    duration: 3000, 
+    close: true, 
+    gravity: "top", 
+    position: "right", 
+    stopOnFocus: true, 
+}).showToast();
 }
 
 function alternarImagenes() {

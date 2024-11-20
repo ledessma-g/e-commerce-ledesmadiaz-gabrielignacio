@@ -1,5 +1,14 @@
 const carritoCardsContenedor = document.getElementById('carritoCardsContenedor');
 
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+let quantity = JSON.parse(localStorage.getItem('quantity')) || 0;
+
+document.addEventListener("DOMContentLoaded", () => {
+    renderizarCarrito();
+    actualizarCantidad();
+});
+
 function renderizarCarrito() {
     console.log('Renderizando carrito:', cart);
 
@@ -18,7 +27,7 @@ function renderizarCarrito() {
                     <div class="card-body">
                         <h5 class="card-title">${item.title}</h5>
                         <div>
-                            <p class="card-text"><small class="text-muted">Precio: ${item.precio * item.quantity}</small></p>
+                            <p class="card-text"><small class="text-muted">Precio: $${item.precio * item.quantity}</small></p>
                             <p class="card-text"><small class="text-muted">Cantidad: ${item.quantity}</small></p>
                             <button class="btn btn-danger" onclick="eliminarDelCarrito(${item.id})">Eliminar</button>
                         </div>
@@ -29,35 +38,65 @@ function renderizarCarrito() {
     `).join('');
 }
 
-
 function eliminarDelCarrito(id) {
-    const cards = JSON.parse(localStorage.getItem('cart'))
+    console.log(`Eliminando producto con id: ${id}`);
+    
+    cart = cart.filter(item => item.id !== id);
 
-    const newCards = cards.filter(card => )
-    const index = cart.findIndex(item => item.id === id);
+    guardarCarrito();
 
-    if (index !== -1) {
-        // Eliminar el producto del array `cart` y su cantidad correspondiente del array `quantity`
-        cart.splice(index, 1);
-        quantity.splice(index, 1);
+    renderizarCarrito();
 
-        // Guardar los cambios en el almacenamiento local
-        guardarCarrito();
+    actualizarCantidad();
 
-        // Renderizar nuevamente el carrito
-        renderizarCarrito();
-    }
+    calcularTotal();
 }
 
-// Actualizar ambos arrays en localStorage
 function guardarCarrito() {
     localStorage.setItem('cart', JSON.stringify(cart));
-    localStorage.setItem('quantity', JSON.stringify(quantity));
+    localStorage.setItem('quantity', quantity);
 }
 
-// Al cargar la página, asegúrate de sincronizar ambos arrays
+function actualizarCantidad() {
+    quantity = cart.reduce((acumulado, item) => acumulado + item.quantity, 0);
 
-let quantity = JSON.parse(localStorage.getItem('quantity')) || [];
+    localStorage.setItem('quantity', quantity);
 
+    const quantityTag = document.querySelector("#quantity");
+    if (quantityTag) {
+        quantityTag.innerText = quantity;
+    }
 
-document.addEventListener('DOMContentLoaded', renderizarCarrito);
+    console.log(`Cantidad total actualizada: ${quantity}`);
+}
+
+function calcularTotal(carrito) {
+    const cartTotalElement = document.querySelector("#cart-total");
+
+    if (!carrito || carrito.length === 0) {
+        cartTotalElement.innerText = "$0";
+        return;
+    }
+
+    const total = carrito.reduce(
+        (acumulado, item) => acumulado + item.precio * item.quantity,
+        0
+    );
+
+    cartTotalElement.innerText = `$${total.toFixed(2)}`;
+}
+
+calcularTotal(JSON.parse(localStorage.getItem("cart")));
+
+function clearCart(){
+    let quantityTag = document.querySelector("#quantity")
+    quantityTag.innerText = "0"
+    localStorage.setItem("cart", JSON.stringify([]))
+    renderizarCarrito([])
+    calcularTotal(0)
+}
+
+const clearButton = document.querySelector("#btn-danger");
+if (clearButton) {
+    clearButton.addEventListener("click", clearCart);
+}
