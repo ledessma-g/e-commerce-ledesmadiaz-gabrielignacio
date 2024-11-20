@@ -94,3 +94,46 @@ h2 {
 .carrito:hover {
     background-color: #1d3557;
 }
+
+.inputbtns-div{
+    display: flex;
+    justify-content: center;
+}
+
+.button-contador-iz, .button-contador-de{
+    background-color: #457b9d;
+    width: 30px;
+    height: 30px;
+    border: rgb(255, 255, 255) 2px solid;
+    font-size: larger;
+    font-weight: 900;
+    color: azure;
+}
+
+.button-contador-de{
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.button-contador-iz{
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.input-cantidad{
+    height: 30px;
+    font-size: larger;
+    border: rgb(83, 83, 83) 2px solid;
+    text-align: center;
+    border-radius: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}

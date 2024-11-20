@@ -29,7 +29,7 @@ main.innerHTML = `
           </div>
         </div>
         ${localStorage.getItem('username') ?
-            `<div>
+            `<div class="inputbtns-div">
             <button class="button-contador-iz" type="button" onclick="decreaseItem(${producto.id})">-</button>
             <input type="number" id="cantidad-${producto.id}" class="input-cantidad" value="1" min="1" max="${producto.stock}" onchange="updateQuantity(${producto.id})"></input>
             <button class="button-contador-de" type="button" onclick="increaseItem(${producto.id})">+</button>
@@ -88,7 +88,7 @@ function addItems() {
 
   Toastify({
     text: `${producto.title} ha sido agregado al carrito.`,
-    duration: 3000, 
+    duration: 2000, 
     close: true, 
     gravity: "top", 
     position: "right", 

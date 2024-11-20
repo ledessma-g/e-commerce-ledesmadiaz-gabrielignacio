@@ -92,8 +92,9 @@ function clearCart(){
     let quantityTag = document.querySelector("#quantity")
     quantityTag.innerText = "0"
     localStorage.setItem("cart", JSON.stringify([]))
-    renderizarCarrito([])
+    renderizarCarrito()
     calcularTotal(0)
+    carritoCardsContenedor.innerHTML = "<p>No hay productos en el carrito.</p>"
 }
 
 const clearButton = document.querySelector("#btn-danger");

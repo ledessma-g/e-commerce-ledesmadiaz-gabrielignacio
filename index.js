@@ -88,9 +88,8 @@ const filterCards = () => {
     let filtered = data.filter((item) => {
         const matchesSearch = item.title.toLowerCase().includes(query);
         const matchesType = selectedFilters.type.length === 0 || selectedFilters.type.includes(item.tipoDeCard);
-        const matchesArtist = selectedFilters.artist.length === 0 || selectedFilters.artist.includes(item.artist);
 
-        return matchesSearch && matchesType && matchesArtist;
+        return matchesSearch && matchesType;
     });
 
     fillCards(filtered);
