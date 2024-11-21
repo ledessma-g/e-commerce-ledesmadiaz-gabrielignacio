@@ -27,7 +27,7 @@ function renderizarCarrito() {
                     <div class="card-body">
                         <h5 class="card-title">${item.title}</h5>
                         <div>
-                            <p class="card-text"><small class="text-muted">Precio: $${item.precio * item.quantity}</small></p>
+                            <p class="card-text"><small class="text-muted">Precio: $${(item.precio * item.quantity).toFixed(2)}</small></p>
                             <p class="card-text"><small class="text-muted">Cantidad: ${item.quantity}</small></p>
                             <button class="btn btn-danger" onclick="eliminarDelCarrito(${item.id})">Eliminar</button>
                         </div>
@@ -62,7 +62,7 @@ function actualizarCantidad() {
 
     localStorage.setItem('quantity', quantity);
 
-    const quantityTag = document.querySelector("#quantity");
+    const quantityTag = document.querySelector(".quantity");
     if (quantityTag) {
         quantityTag.innerText = quantity;
     }
@@ -89,8 +89,6 @@ function calcularTotal(carrito) {
 calcularTotal(JSON.parse(localStorage.getItem("cart")));
 
 function clearCart(){
-    let quantityTag = document.querySelector("#quantity")
-    quantityTag.innerText = "0"
     localStorage.setItem("cart", JSON.stringify([]))
     renderizarCarrito()
     calcularTotal(0)
@@ -100,4 +98,59 @@ function clearCart(){
 const clearButton = document.querySelector("#btn-danger");
 if (clearButton) {
     clearButton.addEventListener("click", clearCart);
+}
+
+
+
+function checkout() {
+    const cart = JSON.parse(localStorage.getItem("cart"));
+    const user = localStorage.getItem("username");
+  
+    if (!cart || cart.length === 0) {
+      Swal.fire({
+        icon: "error", 
+        title: "Carrito vacío",
+        text: "No puedes realizar la compra porque el carrito está vacío.",
+        confirmButtonText: "Entendido",
+        confirmButtonColor: "#06f",
+      });
+      return; 
+    }
+  
+    const recurso = {
+      user: user,
+      items: cart,
+    };
+  
+    fetch("https://673d09dd4db5a341d833d038.mockapi.io/orders", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json", 
+      },
+      body: JSON.stringify(recurso),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        Swal.fire({
+          icon: "success", 
+          text: `Gracias por su compra, ${user}! Hemos registrado tu orden número #${data.id}`,
+          confirmButtonText: "Okay",
+          confirmButtonColor: "#06f",
+        });
+
+        clearCart();
+      })
+      .catch(() =>
+        Swal.fire({
+          icon: "error", 
+          text: "Ups, hubo un problema. Por favor, inténtalo más tarde.",
+          confirmButtonText: "Okay",
+          confirmButtonColor: "#06f",
+        })
+      );
+  }
+
+let checkoutButton = document.querySelector("#btn-checkout")
+if (checkoutButton){
+    checkoutButton.addEventListener("click", checkout)
 }

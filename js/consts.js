@@ -145,7 +145,7 @@ const navbarItems = [{
 }, {
   "name": "Cart",
   "text": "",
-  "icono": '<img width="60" height="60" src="https://img.icons8.com/ios-glyphs/60/shopping-cart--v1.png" alt="shopping-cart--v1"/><div id="quantity" style="display: none;"></div>',
+  "icono": '<img width="60" height="60" src="https://img.icons8.com/ios-glyphs/60/shopping-cart--v1.png" alt="shopping-cart--v1"/><div id="quantity"></div>',
   "href": "carrito.html",
   "classExtra": "cart"
 }, {

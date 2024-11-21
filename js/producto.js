@@ -84,7 +84,8 @@ function addItems() {
   const quantity = cart.reduce((total, item) => total + item.quantity, 0);
   localStorage.setItem("quantity", quantity);
 
-  const quantityTag = document.querySelector(".quantity");
+  const quantityTag = document.querySelector("#quantity");
+  quantityTag.innerHTML = quantity
 
   Toastify({
     text: `${producto.title} ha sido agregado al carrito.`,

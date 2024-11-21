@@ -81,23 +81,22 @@ body {
     transform: scale(1.05);
     margin: 0 auto;
     display: flex;
-    justify-content: center;
     flex-wrap: nowrap;
     flex-flow: wrap;
 }
 
 .login-form h2 {
-    margin-bottom: 20px;
     text-align: center;
+    margin: 0 auto 10px;
 }
 
 .login-form input[type="text"],
 .login-form input[type="password"] {
     width: 90%;
     padding: 10px;
-    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin: 5px auto 5px;
 }
 
 .login-form button {
@@ -113,4 +112,22 @@ body {
 
 .login-form button:hover {
     background-color: #306dad;
+}
+
+#login-help{
+    display: flex;
+    margin: 0 0 5px 5px;
+    flex-direction: column;
+}
+
+#login-help-section{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+#login-help-hidden{
+    display: none;
+    font-size: small;
 }

@@ -1,5 +1,5 @@
-const rightUser = "gabo";
-const rightPassword = "contraseña";
+const rightUser = "admin";
+const rightPassword = "1234";
 
 const loginForm = document.querySelector(".login-form");
 const inputUsername = document.querySelector("#username");
@@ -31,3 +31,14 @@ const username = localStorage.getItem('username');
 if (username) {
     window.location.href = 'catalogo.html';
 }
+
+let helpBtn = document.querySelector("#login-help-section")
+let helpToggle = document.querySelector("#login-help-hidden")
+
+helpBtn.addEventListener("click", function loginToggle(){
+    if(helpToggle.style.display == "none"){
+        helpToggle.style.display = "block"
+    } else{
+        helpToggle.style.display = "none"
+    }
+})

@@ -37,3 +37,6 @@ function logout() {
     updateNavButton();
     window.location.href = "catalogo.html";
 }
+
+let quantityTag = document.querySelector("#quantity")
+quantityTag.innerHTML = localStorage.getItem("quantity")
